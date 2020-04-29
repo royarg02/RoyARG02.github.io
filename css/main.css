@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Google Sans', 'Segoe UI', 'Ubuntu', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    margin: 0 auto;
+    background-color: #2196F3;
+    height: 56px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 16px;
+}
+
+#Title{
+    float: left;
+    color: #FFFFFF;
+}
+
+#ButtonBar{
+    list-style-type: none;
+    float: right;
+}
+
+#ButtonBar li{
+    box-sizing: border-box;
+    margin: 8px;
+    float: right;
+}
+
+#ButtonBar a{
+    transition-property: color, border, background-color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+}
+
+#ButtonBar a:link, a:visited{
+    text-decoration: none;
+    font-weight: 500;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #2196F3;
+    border-radius: 8px;
+    color: #000000;
+    padding: 8px;
+    outline: none;
+}
+
+#ButtonBar a:hover{
+    border-color: #64B5F6;
+    color: #FFFFFF;
+}
+
+#ButtonBar a:active{
+    border-style: groove;
+    border-color: #0D47A1;
+    color: #000000;
+    background-color: #64B5F6;
+    outline: none;
+}
+
+main{
+    clear: both;
+    padding: 8px;
+}
+
+footer{
+    text-align: center;
+}
