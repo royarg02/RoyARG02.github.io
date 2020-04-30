@@ -17,28 +17,30 @@ header{
 }
 
 #Title{
+    box-sizing: border-box;
     float: left;
     color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
 }
 
-#ButtonBar{
+.ButtonBar li{
     list-style-type: none;
-    float: right;
-}
-
-#ButtonBar li{
     box-sizing: border-box;
-    margin: 8px;
+    margin: 0px 8px;
+}
+                    
+#Actions li{
     float: right;
 }
 
-#ButtonBar a{
+#Actions a{
     transition-property: color, border, background-color;
     transition-duration: 200ms;
     transition-timing-function: ease-out;
 }
 
-#ButtonBar a:link, a:visited{
+#Actions a:link, a:visited{
     text-decoration: none;
     font-weight: 500;
     border-style: solid;
@@ -50,12 +52,12 @@ header{
     outline: none;
 }
 
-#ButtonBar a:hover{
+#Actions a:hover{
     border-color: #64B5F6;
     color: #FFFFFF;
 }
 
-#ButtonBar a:active{
+#Actions a:active{
     border-style: groove;
     border-color: #0D47A1;
     color: #000000;
@@ -68,6 +70,54 @@ main{
     padding: 8px;
 }
 
+.Section{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 16px 0px;
+}
+
+.Section .Heading{
+    font-size: 48px;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    flex-shrink: 0;
+    color: #0000008A;
+}
+
+.Section .Content{
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+    text-align: justify;
+    padding: 0px 8px;
+}
+
+.Section .Content-Text{
+    font-size: 24px;
+    margin: 0px 0px 24px 0px;
+}
+
+@media screen and (max-width: 1024px) {
+    .Section{
+        flex-direction: column;
+    }
+    
+    .Section .Content-Text{
+        margin: 24px 0px;
+    }
+}
+
 footer{
     text-align: center;
+    background-color: #2196F3;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 16px 8px;
+}
+
+#WIP{
+    font-style: oblique;
 }
