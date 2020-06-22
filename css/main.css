@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    padding: 0px;
+    padding: 0px 0px 16px 0px;
     font-family: 'Google Sans', 'Segoe UI', 'Ubuntu', 'Helvetica Neue', sans-serif;
 }
 
@@ -26,14 +26,22 @@ header{
 }
 
 .ButtonBar{
-    list-style-type: none;
     box-sizing: border-box;
     margin: 0px;
+    float: right;
 }
 
-#Actions li{
+#Actions a, .Button{
     margin: 0px 8px;
-    float: right;
+    border-radius: 8px;
+}
+
+#Actions a:link, #Actions a:visited, .Button:link, .Button:visited{
+    text-decoration: none;
+    font-weight: 500;
+    color: #000000;
+    padding: 8px;
+    outline: none;
 }
 
 #Actions a{
@@ -42,19 +50,13 @@ header{
     transition-timing-function: ease-out;
     border-style: solid;
     border-width: 2px;
-    border-radius: 8px;
 }
 
 #Actions a:link, a:visited{
-    text-decoration: none;
-    font-weight: 500;
     border-color: #00000000; /*transparent*/
-    color: #000000;
-    padding: 8px;
-    outline: none;
 }
 
-#Actions a:hover{
+#Actions a:hover, #Actions a:focus{
     border-color: #64B5F6;
     color: #FFFFFF;
 }
@@ -67,25 +69,39 @@ header{
     outline: none;
 }
 
+#Options{
+    float: right;
+    position: relative;
+    margin: 0px 8px;
+}
+
 #Avatar, #Avatar:visited{
+    border-radius: 48px;
+    height: 48px;
+    width: 48px;
+    margin: 0px 0px 8px;
+    padding: 8px;
     transition-property: box-shadow;
     transition-duration: 200ms;
     transition-timing-function: ease-out;
     border-style: none;
-    border-radius: 48px;
-    float: right;
-    height: 48px;
-    width: 48px;
-    margin: 0px 8px;
-    padding: 8px;
     outline: 0 !important;
     text-align: center;
     font-size: 24px;
     background-color: #FFFFFF;
 }
 
-#Avatar:hover{
+#Options:focus{
+    outline: none;
+}
+
+#Options:hover #Avatar, #Options:focus-within #Avatar{
     box-shadow: 0px 2px 15px 2px #696969;
+}
+
+#Options:hover #More-Options, #Options:focus-within> #More-Options{
+    visibility: visible;
+    opacity: 1;
 }
 
 #Avatar:active{
@@ -100,14 +116,51 @@ header{
     border: 0;
 }
 
+#More-Options{
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    background-color: #FFFFFF;
+    min-width: 100px;
+    min-height: 100px;
+    z-index: 1;
+    border-radius: 6px;
+    padding: 8px;
+    box-shadow: 0px 2px 6px #696969;
+}
+
+#More-Options .Options-Item{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+#More-Options .Options-All-Items{
+    display: none;
+}
+
 main{
     clear: both;
     padding: 8px;
 }
 
+main a:link, a:visited{
+    text-decoration: none;
+    color: #000000;
+}
+
+main a:hover{
+    text-decoration-line: underline;
+    text-decoration-color: #000000;
+}
+
 .Section{
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     flex-direction: row;
     padding: 16px 0px;
 }
@@ -116,44 +169,119 @@ main{
     font-size: 48px;
     font-weight: 400;
     display: block;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
     flex-shrink: 0;
+    flex-basis: 470px;
     color: #0000008A;
 }
 
 .Section .Content{
-    margin: 0 auto;
+    flex-grow: 1;
     display: block;
     box-sizing: border-box;
     padding: 0px 8px;
 }
 
+.Button{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    background-color: #E0E0E0;
+    transition-property: box-shadow;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+    box-shadow: 0px 2px 4px #696969;
+}
+
+.Button:hover, .Button:focus{
+    box-shadow: 0px 2px 8px #696969;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.Button:active{
+    box-shadow: 0px 2px 5px #696969;
+    background-color: #66BCBCBC;
+}
+
 .Section .Content-Text{
     font-size: 24px;
     margin: 0px 0px 24px 0px;
+    text-decoration: none;
+}
+
+.Section .Content-Table{
+    width: 100%;
+    margin: 0px 0px 24px 0px;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+
+.Section .Content-Table tr{
+    display: flex;
+}
+
+.Section .Content-Table th, td{
+    border-bottom: 1px solid #64B5F6;
+    padding: 24px;
+    vertical-align: bottom;
+    flex-grow: 1;
+}
+
+.Section .Content-Table .Button-Entry{
+    text-align: center;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 @media screen and (max-width: 1024px) {
     .Section{
         flex-direction: column;
     }
-    
+    .Section .Heading{
+        flex-basis: 0px;
+    }
     .Section .Content-Text{
         margin: 24px 0px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #Actions .All-Actions{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .ButtonBar{
+        display: none;
+    }
+    #More-Options .Options-All-Items{
+        display: block;
     }
 }
 
 footer{
     text-align: center;
     background-color: #2196F3;
-    font-size: 12px;
     color: #FFFFFF;
     position: fixed;
     left: 0px;
     right: 0px;
     bottom: 0px;
     padding: 16px 8px;
+}
+
+.Options-Item{
+    margin: 2px 0px;
+    text-align: right;
+    font-size: 16px;
+    
+}
+
+.caption, footer{
+    font-size: 12px;
+    line-height: 12px;
 }
 
 #WIP{
