@@ -1,19 +1,46 @@
+:root{
+    --primary-color: #2196F3;
+    --primary-color-light: #64B5F6;
+    --primary-color-dark: #0D47A1;
+    --button-color: #E0E0E0;
+    --highlight-color: rgba(0, 0, 0, 0.04);
+    --shadow-color: #696969;
+    --light-theme-subtle-color: #0000008A;
+    --header-line-height: 48px;
+    --footer-height: 32px;
+    --floating-action-button-size:48px;
+    --options-menu-width: 250px;
+    --button-transition-duration: 150ms;
+    --menu-transition-duration: 200ms;
+    --font-size-headline1: 96px;
+    --font-size-headline2: 60px;
+    --font-size-headline3: 48px;
+    --font-size-headline4: 34px;
+    --font-size-headline5: 24px;
+    --font-size-headline6: 20px;
+    --font-size-subtitle1: 16px;
+    --font-size-caption: 12px;
+    --font-size-button: 14px;
+}
+
 body{
     margin: 0px;
-    padding: 0px 0px 16px 0px;
+    padding: 0px 0px var(--footer-height) 0px;
     font-family: 'Google Sans', 'Segoe UI', 'Ubuntu', 'Helvetica Neue', sans-serif;
 }
 
 header{
-    background-color: #2196F3;
-    height: 48px;
-    line-height: 48px;
+    background-color: var(--primary-color);
+    height: var(--header-line-height);
+    line-height: var(--header-line-height);
     position: -webkit-sticky;
     position: sticky;
+    z-index: 2;
     top: 0px;
     left: 0px;
     right: 0px;
     padding: 16px;
+    box-shadow: 0px 2px 6px var(--shadow-color);
 }
 
 #Title{
@@ -21,13 +48,11 @@ header{
     float: left;
     color: #FFFFFF;
     font-weight: 500;
-    font-size: 20px;
+    font-size: var(--font-size-headline6);
     margin: 0px;
 }
 
 .ButtonBar{
-    box-sizing: border-box;
-    margin: 0px;
     float: right;
 }
 
@@ -46,7 +71,7 @@ header{
 
 #Actions a{
     transition-property: color, border, background-color;
-    transition-duration: 200ms;
+    transition-duration: var(--button-transition-duration);
     transition-timing-function: ease-out;
     border-style: solid;
     border-width: 2px;
@@ -57,37 +82,37 @@ header{
 }
 
 #Actions a:hover, #Actions a:focus{
-    border-color: #64B5F6;
+    border-color: var(--primary-color-light);
     color: #FFFFFF;
 }
 
 #Actions a:active{
     border-style: groove;
-    border-color: #0D47A1;
+    border-color: var(--primary-color-dark);
     color: #000000;
-    background-color: #64B5F6;
+    background-color: var(--primary-color-light);
     outline: none;
 }
 
 #Options{
     float: right;
     position: relative;
-    margin: 0px 8px;
+    margin-left: 8px;
 }
 
 #Avatar, #Avatar:visited{
-    border-radius: 48px;
-    height: 48px;
-    width: 48px;
+    border-radius: var(--floating-action-button-size);
+    height: var(--floating-action-button-size);
+    width: var(--floating-action-button-size);
     margin: 0px 0px 8px;
     padding: 8px;
     transition-property: box-shadow;
-    transition-duration: 200ms;
+    transition-duration: var(--button-transition-duration);
     transition-timing-function: ease-out;
     border-style: none;
     outline: 0 !important;
     text-align: center;
-    font-size: 24px;
+    font-size: var(--font-size-headline5);
     background-color: #FFFFFF;
 }
 
@@ -96,7 +121,7 @@ header{
 }
 
 #Options:hover #Avatar, #Options:focus-within #Avatar{
-    box-shadow: 0px 2px 15px 2px #696969;
+    box-shadow: 0px 2px 15px 2px var(--shadow-color);
 }
 
 #Options:hover #More-Options, #Options:focus-within> #More-Options{
@@ -118,19 +143,18 @@ header{
 
 #More-Options{
     transition-property: opacity;
-    transition-duration: 250ms;
+    transition-duration: var(--menu-transition-duration);
     transition-timing-function: ease-out;
     opacity: 0;
     visibility: hidden;
     position: absolute;
+    overflow: auto;
     right: 0;
     background-color: #FFFFFF;
-    min-width: 100px;
-    min-height: 100px;
-    z-index: 1;
+    min-width: var(--options-menu-width);
     border-radius: 6px;
     padding: 8px;
-    box-shadow: 0px 2px 6px #696969;
+    box-shadow: 0px 2px 15px var(--shadow-color);
 }
 
 #More-Options .Options-Item{
@@ -166,14 +190,14 @@ main a:hover{
 }
 
 .Section .Heading{
-    font-size: 48px;
+    font-size: var(--font-size-headline3);
     font-weight: 400;
     display: block;
     text-align: left;
     margin: 0 auto;
     flex-shrink: 0;
     flex-basis: 470px;
-    color: #0000008A;
+    color: var(--light-theme-subtle-color);
 }
 
 .Section .Content{
@@ -184,28 +208,28 @@ main a:hover{
 }
 
 .Button{
-    font-size: 14px;
+    font-size: var(--font-size-button);
     text-transform: uppercase;
     letter-spacing: 1.25px;
-    background-color: #E0E0E0;
-    transition-property: box-shadow;
-    transition-duration: 100ms;
+    background-color: var(--button-color);
+    transition-property: box-shadow, background-color;
+    transition-duration: var(--button-transition-duration);
     transition-timing-function: ease-out;
-    box-shadow: 0px 2px 4px #696969;
+    box-shadow: 0px 2px 4px var(--shadow-color);
 }
 
 .Button:hover, .Button:focus{
-    box-shadow: 0px 2px 8px #696969;
-    background-color: rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 2px 8px 2px var(--shadow-color);
+    background-color: var(--highlight-color);
 }
 
 .Button:active{
-    box-shadow: 0px 2px 5px #696969;
-    background-color: #66BCBCBC;
+    box-shadow: 0px 2px 5px var(--shadow-color);
+    background-color: var(--primary-color-light);
 }
 
 .Section .Content-Text{
-    font-size: 24px;
+    font-size: var(--font-size-headline5);
     margin: 0px 0px 24px 0px;
     text-decoration: none;
 }
@@ -213,23 +237,41 @@ main a:hover{
 .Section .Content-Table{
     width: 100%;
     margin: 0px 0px 24px 0px;
-    font-size: 16px;
+    font-size: var(--font-size-subtitle1);
     border-collapse: collapse;
 }
 
-.Section .Content-Table tr{
+.Section .Content-Table .Content-Table-Header{
     display: flex;
+    font-size: var(--font-size-headline6);
+    font-weight: 500;
+    padding: 16px 0px 0px;
 }
 
-.Section .Content-Table th, td{
-    border-bottom: 1px solid #64B5F6;
-    padding: 24px;
-    vertical-align: bottom;
+.Section .Content-Table .Content-Table-Row{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.Section .Content-Table .Content-Table-Cell{
+    display: flex;
+    border-bottom: 1px solid var(--primary-color-light);
+    justify-content: start;
+    align-items: center;
+    padding: 16px 8px;
     flex-grow: 1;
 }
 
+.Section .Content-Table .Content-Table-Cell:first-child{
+    padding-left: 0px;
+}
+
+.Section .Content-Table .Content-Table-Cell:last-child{
+    padding-right: 0px;
+}
+
 .Section .Content-Table .Button-Entry{
-    text-align: center;
     flex-shrink: 0;
     flex-grow: 0;
 }
@@ -261,27 +303,51 @@ main a:hover{
     }
 }
 
+@media screen and (max-width: 360px){
+    .Section .Content-Table .Content-Table-Row{
+        flex-direction: column;
+    }
+
+    .Section .Content-Table .Content-Table-Cell{
+        border: none;
+        padding: 16px 0px;
+        justify-content: center;
+    }
+    .Section .Content-Table .Content-Table-Cell:last-child{
+        border-bottom: 1px solid var(--primary-color-light);
+    }
+}
+
+@media screen and (max-height: 480px){
+    #More-Options{
+        height: 55vh;
+    }
+}
+
 footer{
+    height: var(--footer-height);
+    box-sizing: border-box;
     text-align: center;
-    background-color: #2196F3;
+    background-color: var(--primary-color);
     color: #FFFFFF;
     position: fixed;
+    z-index: 1;
     left: 0px;
     right: 0px;
     bottom: 0px;
-    padding: 16px 8px;
+    padding: 8px;
+    box-shadow: 0px -2px 6px var(--shadow-color);
 }
 
 .Options-Item{
     margin: 2px 0px;
     text-align: right;
-    font-size: 16px;
-    
+    font-size: var(--font-size-subtitle1);
 }
 
 .caption, footer{
-    font-size: 12px;
-    line-height: 12px;
+    font-size: var(--font-size-caption);
+    line-height: var(--font-size-caption);
 }
 
 #WIP{
