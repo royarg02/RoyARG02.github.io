@@ -6,6 +6,7 @@
     --highlight-color: rgba(0, 0, 0, 0.04);
     --shadow-color: #696969;
     --light-theme-subtle-color: #0000008A;
+    --header-height: 56px;
     --header-line-height: 48px;
     --footer-height: 32px;
     --floating-action-button-size:48px;
@@ -23,6 +24,11 @@
     --font-size-button: 14px;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
+}
+
 body{
     margin: 0px;
     padding: 0px 0px var(--footer-height) 0px;
@@ -31,15 +37,15 @@ body{
 
 header{
     background-color: var(--primary-color);
-    height: var(--header-line-height);
+    height: var(--header-height);
     line-height: var(--header-line-height);
-    position: -webkit-sticky;
+    box-sizing: border-box;
     position: sticky;
     z-index: 2;
     top: 0px;
     left: 0px;
     right: 0px;
-    padding: 16px;
+    padding: calc((var(--header-height) - var(--header-line-height)) / 2) 16px;
     box-shadow: 0px 2px 6px var(--shadow-color);
 }
 
@@ -168,7 +174,6 @@ header{
 }
 
 main{
-    clear: both;
     padding: 8px;
 }
 
