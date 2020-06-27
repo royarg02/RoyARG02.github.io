@@ -190,30 +190,7 @@ main a:hover{
     text-decoration-color: #000000;
 }
 
-.Section{
-    display: flex;
-    align-items: stretch;
-    flex-direction: row;
-    padding: 16px 0px;
-}
 
-.Section .Heading{
-    font-size: var(--font-size-headline3);
-    font-weight: 400;
-    display: block;
-    text-align: left;
-    margin: 0 auto;
-    flex-shrink: 0;
-    flex-basis: 470px;
-    color: var(--light-theme-subtle-color);
-}
-
-.Section .Content{
-    flex-grow: 1;
-    display: block;
-    box-sizing: border-box;
-    padding: 0px 8px;
-}
 
 .Button{
     font-size: var(--font-size-button);
@@ -234,104 +211,6 @@ main a:hover{
 .Button:active{
     box-shadow: 0px 2px 5px var(--shadow-color);
     background-color: var(--primary-color-light);
-}
-
-.Section .Content-Text{
-    font-size: var(--font-size-headline5);
-    margin: 0px 0px 24px 0px;
-    text-decoration: none;
-}
-
-.Section .Content-Table{
-    width: 100%;
-    margin: 0px 0px 24px 0px;
-    font-size: var(--font-size-subtitle1);
-    border-collapse: collapse;
-}
-
-.Section .Content-Table .Content-Table-Header{
-    display: flex;
-    font-size: var(--font-size-headline6);
-    font-weight: 500;
-    padding: 16px 0px 0px;
-}
-
-.Section .Content-Table .Content-Table-Row{
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-}
-
-.Section .Content-Table .Content-Table-Cell{
-    display: flex;
-    border-bottom: 1px solid var(--primary-color-light);
-    justify-content: start;
-    align-items: center;
-    padding: 16px 8px;
-    flex-basis: 50%;
-    flex-grow: 1;
-}
-
-.Section .Content-Table .Content-Table-Cell:first-child{
-    padding-left: 0px;
-}
-
-.Section .Content-Table .Content-Table-Cell:last-child{
-    padding-right: 0px;
-}
-
-.Section .Content-Table .Button-Entry{
-    flex-basis: 0px;
-    flex-shrink: 0;
-    flex-grow: 0;
-}
-
-@media screen and (max-width: 1024px) {
-    .Section{
-        flex-direction: column;
-    }
-    .Section .Heading{
-        flex-basis: 0px;
-    }
-    .Section .Content-Text{
-        margin: 24px 0px;
-    }
-}
-
-@media screen and (max-width: 768px){
-    #Actions .All-Actions{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 480px){
-    .ButtonBar{
-        display: none;
-    }
-    #More-Options .Options-All-Items{
-        display: block;
-    }
-}
-
-@media screen and (max-width: 430px){
-    .Section .Content-Table .Content-Table-Row{
-        flex-direction: column;
-    }
-
-    .Section .Content-Table .Content-Table-Cell{
-        border: none;
-        padding: 16px 0px;
-        justify-content: center;
-    }
-    .Section .Content-Table .Content-Table-Cell:last-child{
-        border-bottom: 1px solid var(--primary-color-light);
-    }
-}
-
-@media screen and (max-height: 480px){
-    #More-Options{
-        height: 55vh;
-    }
 }
 
 footer{
