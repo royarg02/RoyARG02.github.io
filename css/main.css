@@ -58,6 +58,11 @@ header{
     margin: 0px;
 }
 
+#Title a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .ButtonBar{
     float: right;
 }
