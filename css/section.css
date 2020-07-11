@@ -1,11 +1,11 @@
-.Section{
+.Section {
     display: flex;
     align-items: stretch;
     flex-direction: row;
     padding: 16px 0px;
 }
 
-.Section .Heading{
+.Section .Heading {
     font-size: var(--font-size-headline3);
     font-weight: 400;
     display: block;
@@ -16,46 +16,47 @@
     color: var(--light-theme-subtle-color);
 }
 
-.Section .Content{
+.Section .Content {
     flex-grow: 1;
     display: block;
     box-sizing: border-box;
     padding: 0px 8px;
 }
 
-.Section .Content-Text{
+.Section .Content-Text {
     font-size: var(--font-size-headline5);
     margin: 0px 0px 24px 0px;
     text-decoration: none;
 }
 
-.Section .Content-Table{
+.Section .Content-Table {
     width: 100%;
     margin: 0px 0px 24px 0px;
     font-size: var(--font-size-subtitle1);
     border-collapse: collapse;
 }
 
-.Section .Content-Table .Content-Table-Row,.Section .Content-Table .Content-Table-Row-Header{
+.Section .Content-Table .Content-Table-Row,
+.Section .Content-Table .Content-Table-Row-Header,
+.Section .Content-Table .Content-Table-Row-Delimiter {
     display: flex;
     flex-direction: row;
     justify-content: stretch;
     flex-grow: 1;
+}
+
+.Section .Content-Table .Content-Table-Row-Delimiter {
     border-bottom: 1px solid var(--primary-color-light);
 }
 
-.Section .Content-Table .Content-Table-Row-Header{
-    border: none;
-}
-
-.Section .Content-Table .Content-Table-Column{
+.Section .Content-Table .Content-Table-Column {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-grow: 1;
 }
 
-.Section .Content-Table .Content-Table-Cell{
+.Section .Content-Table .Content-Table-Cell {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -64,7 +65,7 @@
     flex-grow: 1;
 }
 
-.Section .Content-Table .Content-Table-Header{
+.Section .Content-Table .Content-Table-Header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -74,29 +75,31 @@
     flex-grow: 1;
 }
 
-.Section .Content-Table .Content-Table-Column .Content-Table-Cell{
+.Section .Content-Table .Content-Table-Column .Content-Table-Cell {
     align-items: stretch;
     flex-basis: auto;
     flex-grow: 0;
 }
 
-.Section .Content-Table .Content-Table-Row  > .Content-Table-Cell:first-child{
+.Section .Content-Table .Content-Table-Row>.Content-Table-Cell:first-child,
+.Section .Content-Table .Content-Table-Row-Delimiter>.Content-Table-Cell:first-child {
     padding-left: 0px;
 }
 
-.Section .Content-Table .Content-Table-Row  > .Content-Table-Cell:last-child{
+.Section .Content-Table .Content-Table-Row>.Content-Table-Cell:last-child,
+.Section .Content-Table .Content-Table-Row-Delimiter>.Content-Table-Cell:last-child {
     padding-right: 0px;
 }
 
-.Section .Content-Table .Content-Table-Column:first-child > .Content-Table-Cell{
+.Section .Content-Table .Content-Table-Column:first-child>.Content-Table-Cell {
     padding-left: 0px;
 }
 
-.Section .Content-Table .Content-Table-Column:last-child > .Content-Table-Cell{
+.Section .Content-Table .Content-Table-Column:last-child>.Content-Table-Cell {
     padding-right: 0px;
 }
 
-.Section .Content-Table .Button-Entry{
+.Section .Content-Table .Button-Entry {
     flex-basis: auto;
     flex-shrink: 0;
     flex-grow: 0;

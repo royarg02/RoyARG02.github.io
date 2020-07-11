@@ -22,6 +22,7 @@
     --font-size-subtitle1: 16px;
     --font-size-caption: 12px;
     --font-size-button: 14px;
+    --icon-size: 18px;
 }
 
 html{
@@ -61,6 +62,7 @@ header{
 #Title a{
     text-decoration: none;
     color: inherit;
+    cursor: default;
 }
 
 .ButtonBar{
@@ -70,6 +72,7 @@ header{
 #Actions a, .Button{
     margin: 0px 8px;
     border-radius: 8px;
+    cursor: default;
 }
 
 #Actions a:link, #Actions a:visited, .Button:link, .Button:visited{
@@ -103,6 +106,12 @@ header{
     color: #000000;
     background-color: var(--primary-color-light);
     outline: none;
+}
+
+#Actions .All-Actions i{
+    display: none;
+    font-size: var(--font-size-headline5);
+    vertical-align: middle;
 }
 
 #Options{
@@ -175,10 +184,12 @@ header{
     display: block;
     text-decoration: none;
     color: #000000;
+    cursor: default;
 }
 
 #More-Options .Options-All-Items{
     display: none;
+    cursor: default;
 }
 
 main{
@@ -223,7 +234,8 @@ footer{
     box-sizing: border-box;
     text-align: center;
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: #000000;
+    font-weight: 500;
     position: fixed;
     z-index: 1;
     left: 0px;
@@ -235,8 +247,17 @@ footer{
 
 .Options-Item{
     margin: 2px 0px;
-    text-align: right;
+    text-align: left;
     font-size: var(--font-size-subtitle1);
+}
+
+.Options-Item i{
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: var(--icon-size);
+    padding: 8px;
 }
 
 .caption, footer{
