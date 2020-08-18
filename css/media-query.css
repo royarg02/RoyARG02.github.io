@@ -1,62 +1,69 @@
 @media screen and (max-width: 1024px) {
-    .Section{
+    .Section {
         flex-direction: column;
     }
-    .Section .Heading{
+    .Section .Heading {
         flex-basis: auto;
     }
-    .Section .Content-Text, .Section .Content-Table{
+    .Section .Content-Text,
+    .Section .Content-Table {
         margin: 24px 0px 0px;
     }
 }
 
-@media screen and (max-width: 768px){
-    #Actions .All-Actions span{
+@media screen and (max-width: 768px) {
+    #Actions .All-Actions span {
         display: none;
     }
-
-    #Actions .All-Actions i{
+    #Actions .All-Actions i {
         display: inline-block;
     }
 }
 
-@media screen and (max-width: 700px){
-    #Actions .All-Actions{
+@media screen and (max-width: 700px) {
+    #Actions .All-Actions {
         display: none;
     }
 }
 
-@media screen and (max-width: 480px){
-    .ButtonBar{
+@media screen and (max-width: 480px) {
+    .ButtonBar {
         display: none;
     }
-    #More-Options .Options-All-Items{
+    #More-Options .Options-All-Items {
         display: block;
     }
+    @media screen and (max-height: 680px) {
+        #More-Options {
+            height: 55vh;
+        }
+    }
 }
 
-@media screen and (max-width: 430px){
-    .Section .Content-Table .Content-Table-Row, .Section .Content-Table .Content-Table-Row-Header, .Section .Content-Table .Content-Table-Row-Delimiter{
+@media screen and (max-width: 430px) {
+    .Section .Content-Table .Content-Table-Row,
+    .Section .Content-Table .Content-Table-Row-Header,
+    .Section .Content-Table .Content-Table-Row-Delimiter {
         flex-direction: column;
     }
-
-    .Section .Content-Table .Content-Table-Cell, .Content-Table .Content-Table-Header{
+    .Section .Content-Table .Content-Table-Cell,
+    .Content-Table .Content-Table-Header {
         padding: 16px 0px;
         justify-content: center;
     }
-    .Section .Content-Table .Content-Table-Cell:last-child{
+    .Section .Content-Table .Content-Table-Cell:last-child {
         border-bottom: 1px solid var(--primary-color-light);
     }
 }
 
-@media screen and (max-width: 300px){
-    #More-Options{
+@media screen and (max-width: 300px) {
+    #More-Options {
         min-width: 80vw;
     }
 }
 
-@media screen and (max-height: 480px){
-    #More-Options{
+@media screen and (max-height: 480px) {
+    #More-Options {
         height: 55vh;
     }
 }
