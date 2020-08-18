@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary-color: #2196F3;
     --primary-color-light: #64B5F6;
     --primary-color-dark: #0D47A1;
@@ -9,7 +9,7 @@
     --header-height: 56px;
     --header-line-height: 48px;
     --footer-height: 32px;
-    --floating-action-button-size:48px;
+    --floating-action-button-size: 48px;
     --options-menu-width: 250px;
     --button-transition-duration: 150ms;
     --menu-transition-duration: 200ms;
@@ -22,21 +22,21 @@
     --font-size-subtitle1: 16px;
     --font-size-caption: 12px;
     --font-size-button: 14px;
-    --icon-size: 18px;
+    --icon-size: 24px;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     scroll-padding-top: var(--header-height);
 }
 
-body{
+body {
     margin: 0px;
     padding: 0px 0px var(--footer-height) 0px;
     font-family: 'Google Sans', 'Segoe UI', 'Ubuntu', 'Helvetica Neue', sans-serif;
 }
 
-header{
+header {
     background-color: var(--primary-color);
     height: var(--header-height);
     line-height: var(--header-line-height);
@@ -50,40 +50,44 @@ header{
     box-shadow: 0px 2px 6px var(--shadow-color);
 }
 
-#Title{
+#Title {
     box-sizing: border-box;
     float: left;
     color: #FFFFFF;
-    font-weight: 500;
+    font-weight: 600;
     font-size: var(--font-size-headline6);
     margin: 0px;
 }
 
-#Title a{
+#Title a {
     text-decoration: none;
     color: inherit;
     cursor: default;
 }
 
-.ButtonBar{
+.ButtonBar {
     float: right;
 }
 
-#Actions a, .Button{
+#Actions a,
+.Button {
     margin: 0px 8px;
     border-radius: 8px;
     cursor: default;
 }
 
-#Actions a:link, #Actions a:visited, .Button:link, .Button:visited{
+#Actions a:link,
+#Actions a:visited,
+.Button:link,
+.Button:visited {
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     color: #000000;
     padding: 8px;
     outline: none;
 }
 
-#Actions a{
+#Actions a {
     transition-property: color, border, background-color;
     transition-duration: var(--button-transition-duration);
     transition-timing-function: ease-out;
@@ -91,16 +95,19 @@ header{
     border-width: 2px;
 }
 
-#Actions a:link, a:visited{
-    border-color: #00000000; /*transparent*/
+#Actions a:link,
+a:visited {
+    border-color: #00000000;
+    /*transparent*/
 }
 
-#Actions a:hover, #Actions a:focus{
+#Actions a:hover,
+#Actions a:focus {
     border-color: var(--primary-color-light);
     color: #FFFFFF;
 }
 
-#Actions a:active{
+#Actions a:active {
     border-style: groove;
     border-color: var(--primary-color-dark);
     color: #000000;
@@ -108,19 +115,20 @@ header{
     outline: none;
 }
 
-#Actions .All-Actions i{
+#Actions .All-Actions i {
     display: none;
     font-size: var(--font-size-headline5);
     vertical-align: middle;
 }
 
-#Options{
+#Options {
     float: right;
     position: relative;
     margin-left: 8px;
 }
 
-#Avatar, #Avatar:visited{
+#Avatar,
+#Avatar:visited {
     display: block;
     border-radius: var(--floating-action-button-size);
     height: var(--floating-action-button-size);
@@ -139,24 +147,26 @@ header{
     background-size: cover;
 }
 
-#Options:focus{
+#Options:focus {
     outline: none;
 }
 
-#Options:hover #Avatar, #Options:focus-within #Avatar{
+#Options:hover #Avatar,
+#Options:focus-within #Avatar {
     box-shadow: 0px 2px 15px 2px var(--shadow-color);
 }
 
-#Options:hover #More-Options, #Options:focus-within> #More-Options{
+#Options:hover #More-Options,
+#Options:focus-within>#More-Options {
     visibility: visible;
     opacity: 1;
 }
 
-#Avatar:active{
+#Avatar:active {
     box-shadow: none;
 }
 
-#Avatar:focus{
+#Avatar:focus {
     outline: none;
 }
 
@@ -164,7 +174,7 @@ header{
     border: 0;
 }
 
-#More-Options{
+#More-Options {
     transition-property: opacity;
     transition-duration: var(--menu-transition-duration);
     transition-timing-function: ease-out;
@@ -180,35 +190,34 @@ header{
     box-shadow: 0px 2px 15px var(--shadow-color);
 }
 
-#More-Options .Options-Item{
+#More-Options .Options-Item {
     display: block;
     text-decoration: none;
     color: #000000;
     cursor: default;
 }
 
-#More-Options .Options-All-Items{
+#More-Options .Options-All-Items {
     display: none;
     cursor: default;
 }
 
-main{
+main {
     padding: 8px;
 }
 
-main a:link, a:visited{
+main a:link,
+a:visited {
     text-decoration: none;
     color: #000000;
 }
 
-main a:hover{
+main a:hover {
     text-decoration-line: underline;
     text-decoration-color: #000000;
 }
 
-
-
-.Button{
+.Button {
     font-size: var(--font-size-button);
     text-transform: uppercase;
     letter-spacing: 1.25px;
@@ -219,23 +228,24 @@ main a:hover{
     box-shadow: 0px 2px 4px var(--shadow-color);
 }
 
-.Button:hover, .Button:focus{
+.Button:hover,
+.Button:focus {
     box-shadow: 0px 2px 8px 2px var(--shadow-color);
     background-color: var(--highlight-color);
 }
 
-.Button:active{
+.Button:active {
     box-shadow: 0px 2px 5px var(--shadow-color);
     background-color: var(--primary-color-light);
 }
 
-footer{
+footer {
     height: var(--footer-height);
     box-sizing: border-box;
     text-align: center;
     background-color: var(--primary-color);
     color: #000000;
-    font-weight: 500;
+    font-weight: 600;
     position: fixed;
     z-index: 1;
     left: 0px;
@@ -245,26 +255,28 @@ footer{
     box-shadow: 0px -2px 6px var(--shadow-color);
 }
 
-.Options-Item{
+.Options-Item {
     margin: 2px 0px;
     text-align: left;
     font-size: var(--font-size-subtitle1);
 }
 
-.Options-Item i{
-    height: 24px;
-    width: 24px;
+.Options-Item i {
+    height: 32px;
+    width: 32px;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
+    line-height: 32px;
     font-size: var(--icon-size);
     padding: 8px;
 }
 
-.caption, footer{
+.caption,
+footer {
     font-size: var(--font-size-caption);
     line-height: var(--font-size-caption);
 }
 
-#WIP{
+#WIP {
     font-style: oblique;
 }
