@@ -12,7 +12,7 @@
     text-align: left;
     margin: 0 auto;
     flex-shrink: 0;
-    flex-basis: 470px;
+    flex-basis: 480px;
     color: var(--light-theme-subtle-color);
 }
 
