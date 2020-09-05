@@ -12,4 +12,4 @@ It led me to use HTML and CSS instead. I also happen to complete some courses on
 
 I tried to make it visually similar to, if I someday make up my mind to build it, the Flutter web version, but I took some liberties in giving it its flavour.
 
-I tried to avoid **JavaScript** as much as I can, so if you are looking for some `*.js` files in the source, don't bother.
+I tried to avoid **JavaScript** as much as I can, so if you are looking for some `*.js` files in the source, don't bother(_until dark mode :new_moon: is implemented_) :wink:.

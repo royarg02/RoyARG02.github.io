@@ -51,9 +51,6 @@
         padding: 16px 0px;
         justify-content: center;
     }
-    .Section .Content-Table .Content-Table-Cell:last-child {
-        border-bottom: 1px solid var(--primary-color-light);
-    }
 }
 
 @media screen and (max-width: 300px) {
