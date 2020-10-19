@@ -29,22 +29,13 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    #Actions .All-Actions span {
-        display: none;
-    }
-    #Actions .All-Actions i {
-        display: inline-block;
-    }
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 840px) {
     #Actions .All-Actions {
         display: none;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 610px) {
     .ButtonBar {
         display: none;
     }
