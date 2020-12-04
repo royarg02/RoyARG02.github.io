@@ -54,6 +54,10 @@ body {
     font-family: 'Google Sans', 'Segoe UI', 'Ubuntu', 'Helvetica Neue', sans-serif;
 }
 
+body code {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'monospace';
+}
+
 header {
     background-color: var(--primary-color);
     height: var(--header-height);
