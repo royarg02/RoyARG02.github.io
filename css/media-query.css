@@ -1,6 +1,6 @@
 /*
-    Portfolio website of Anurag Roy - Flutter developer and a UNIX/frontend/Android/AI/UI-slash-UX enthusiast
-    Copyright (C) 2020 Anurag Roy
+    Anurag Roy's portfolio website
+    Copyright (C) 2020, 2021 Anurag Roy
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -29,26 +29,6 @@
     }
 }
 
-@media screen and (max-width: 840px) {
-    #Actions .All-Actions {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 610px) {
-    .ButtonBar {
-        display: none;
-    }
-    #More-Options .Options-All-Items {
-        display: block;
-    }
-    @media screen and (max-height: 680px) {
-        #More-Options {
-            height: 55vh;
-        }
-    }
-}
-
 @media screen and (max-width: 430px) {
     .Section .Content-Table .Content-Table-Row,
     .Section .Content-Table .Content-Table-Row-Header,
@@ -62,14 +42,43 @@
     }
 }
 
-@media screen and (max-width: 300px) {
-    #More-Options {
-        min-width: 80vw;
+@media screen and (max-width: 840px) {
+    #Actions .Other-Actions {
+        display: none;
+    }
+    #More-Options .Other-Items {
+        display: block;
     }
 }
 
-@media screen and (max-height: 480px) {
+@media screen and (max-width: 610px) {
+    .ButtonBar {
+        display: none;
+    }
+    #More-Options .Options-All-Items {
+        display: block;
+    }
+    @media screen and (max-height: 840px) {
+        #More-Options {
+            height: 75vh;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
     #More-Options {
-        height: 55vh;
+        min-width: 55vw;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .Options-Item i {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 540px) {
+    #More-Options {
+        height: 60vh;
     }
 }

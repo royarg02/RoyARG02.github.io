@@ -1,6 +1,6 @@
 /*
-    Portfolio website of Anurag Roy - Flutter developer and a UNIX/frontend/Android/AI/UI-slash-UX enthusiast
-    Copyright (C) 2020 Anurag Roy
+    Anurag Roy's portfolio website
+    Copyright (C) 2020, 2021 Anurag Roy
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -17,19 +17,12 @@
 */
 
 :root {
-    --primary-color: #2196F3;
-    --primary-color-light: #64B5F6;
-    --primary-color-dark: #0D47A1;
-    --button-color: #E0E0E0;
-    --highlight-color: rgba(0, 0, 0, 0.04);
-    --shadow-color: #696969;
-    --light-theme-subtle-color: #0000008A;
     --header-height: 56px;
     --header-line-height: 48px;
     --footer-height: 32px;
     --floating-action-button-size: 48px;
     --options-menu-width: 250px;
-    --button-transition-duration: 150ms;
+    --link-transition-duration: 150ms;
     --menu-transition-duration: 200ms;
     --font-size-headline1: 96px;
     --font-size-headline2: 60px;
@@ -45,26 +38,34 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: var(--header-height);
+    scroll-padding-top: calc(var(--header-height) + 8px); /* main padding at top*/
+}
+
+a {
+    text-decoration: none; /* remove underlines*/
 }
 
 body {
     margin: 0px;
-    padding: 0px 0px var(--footer-height) 0px;
-    font-family: 'Google Sans', 'Segoe UI', 'Ubuntu', 'Helvetica Neue', sans-serif;
+    background-color: var(--primary-color);
+    font-family: 'Google Sans', 'Segoe UI', 'Ubuntu', 'Helvetica Neue', 'Noto Sans', sans-serif;
+    color: var(--on-primary-color);
 }
 
 body code {
     font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'monospace';
 }
 
-header {
-    background-color: var(--primary-color);
+#AppBar {
+    /* primary-color-light is used for elevation in dark theme, which doesn't
+    /* affect the light theme
+    */
+    background-color: var(--primary-color-light);
     height: var(--header-height);
     line-height: var(--header-line-height);
     box-sizing: border-box;
     position: sticky;
-    z-index: 2;
+    z-index: 1;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -75,72 +76,83 @@ header {
 #Title {
     box-sizing: border-box;
     float: left;
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: var(--font-size-headline6);
     margin: 0px;
+    font-size: var(--font-size-headline6);
+    font-weight: 600;
 }
 
 #Title a {
-    text-decoration: none;
-    color: inherit;
-    cursor: default;
+    transition-property: color;
+    transition-duration: var(--link-transition-duration);
+    transition-timing-function: ease-out;
+}
+
+#Title a:link, #Title a:visited {
+    color: var(--on-primary-color);
+}
+
+#Title a:hover,
+#Title a:focus {
+    color: var(--secondary-color);
+}
+
+#Title a:active {
+    color: var(--secondary-color-dark);
+    outline: none;
 }
 
 .ButtonBar {
     float: right;
 }
 
+/* all of these are shaped like a button*/
+#Actions a,
+#More-Options a,
+.Button {
+    border-radius: 2px;
+    outline: none;
+}
+
+/* More-Options has its own margin, and font properties*/
 #Actions a,
 .Button {
     margin: 0px 8px;
-    border-radius: 8px;
-    cursor: default;
+    font-weight: 600;
+    padding: 8px;
 }
 
+/* All of these appear on primary color*/
 #Actions a:link,
 #Actions a:visited,
+.Options-Item {
+    color: var(--on-primary-color);
+}
+
 .Button:link,
 .Button:visited {
-    text-decoration: none;
-    font-weight: 600;
-    color: #000000;
-    padding: 8px;
-    outline: none;
+    color: var(--on-secondary-color);
 }
 
-#Actions a {
-    transition-property: color, border, background-color;
-    transition-duration: var(--button-transition-duration);
+/* These behave the same when interacted with*/
+#Actions a, #More-Options a{
+    transition-property: color, background-color;
+    transition-duration: var(--link-transition-duration);
     transition-timing-function: ease-out;
-    border-style: solid;
-    border-width: 2px;
-}
-
-#Actions a:link,
-a:visited {
-    border-color: #00000000;
-    /*transparent*/
 }
 
 #Actions a:hover,
-#Actions a:focus {
-    border-color: var(--primary-color-light);
-    color: #FFFFFF;
+#Actions a:focus,
+#More-Options a:hover,
+#More-Options a:focus {
+    background-color: var(--secondary-color-light);
+    color: var(--on-secondary-color);
 }
 
-#Actions a:active {
-    border-style: groove;
-    border-color: var(--primary-color-dark);
-    color: #000000;
-    background-color: var(--primary-color-light);
+#Actions a:active,
+#More-Options a:active {
+    background-color: var(--secondary-color-dark);
+    color: var(--on-secondary-color);
     outline: none;
-}
-
-#Actions .All-Actions i {
-    display: none;
-    font-size: var(--font-size-headline5);
-    vertical-align: middle;
 }
 
 #Options {
@@ -158,15 +170,29 @@ a:visited {
     margin: 0px 0px 8px;
     padding: 8px;
     transition-property: box-shadow;
-    transition-duration: var(--button-transition-duration);
+    transition-duration: var(--link-transition-duration);
     transition-timing-function: ease-out;
     border-style: none;
     outline: 0 !important;
-    text-align: center;
-    font-size: var(--font-size-headline5);
-    background-color: var(--button-color);
+    background-color: var(--secondary-color);
     background-image: url(../assets/avatar.jpg);
     background-size: cover;
+}
+
+#More-Options {
+    transition-property: opacity;
+    transition-duration: var(--menu-transition-duration);
+    transition-timing-function: ease-out;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    overflow: auto;
+    right: 0;
+    background-color: var(--primary-color-light);
+    min-width: var(--options-menu-width);
+    border-radius: 6px;
+    padding: 8px;
+    box-shadow: 0px 2px 15px var(--shadow-color);
 }
 
 #Options:focus {
@@ -196,87 +222,6 @@ a:visited {
     border: 0;
 }
 
-#More-Options {
-    transition-property: opacity;
-    transition-duration: var(--menu-transition-duration);
-    transition-timing-function: ease-out;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    overflow: auto;
-    right: 0;
-    background-color: #FFFFFF;
-    min-width: var(--options-menu-width);
-    border-radius: 6px;
-    padding: 8px;
-    box-shadow: 0px 2px 15px var(--shadow-color);
-}
-
-#More-Options .Options-Item {
-    display: block;
-    text-decoration: none;
-    color: #000000;
-    cursor: default;
-}
-
-#More-Options .Options-All-Items {
-    display: none;
-    cursor: default;
-}
-
-main {
-    padding: 8px;
-}
-
-main a:link,
-a:visited {
-    text-decoration: none;
-    color: #000000;
-}
-
-main a:hover {
-    text-decoration-line: underline;
-    text-decoration-color: #000000;
-}
-
-.Button {
-    font-size: var(--font-size-button);
-    text-transform: uppercase;
-    letter-spacing: 1.25px;
-    background-color: var(--button-color);
-    transition-property: box-shadow, background-color;
-    transition-duration: var(--button-transition-duration);
-    transition-timing-function: ease-out;
-    box-shadow: 0px 2px 4px var(--shadow-color);
-}
-
-.Button:hover,
-.Button:focus {
-    box-shadow: 0px 2px 8px 2px var(--shadow-color);
-    background-color: var(--highlight-color);
-}
-
-.Button:active {
-    box-shadow: 0px 2px 5px var(--shadow-color);
-    background-color: var(--primary-color-light);
-}
-
-footer {
-    height: var(--footer-height);
-    box-sizing: border-box;
-    text-align: center;
-    background-color: var(--primary-color);
-    color: #000000;
-    font-weight: 600;
-    position: fixed;
-    z-index: 1;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    padding: 8px;
-    box-shadow: 0px -2px 6px var(--shadow-color);
-}
-
 .Options-Item {
     margin: 2px 0px;
     text-align: left;
@@ -290,6 +235,72 @@ footer {
     vertical-align: top;
     line-height: 32px;
     font-size: var(--icon-size);
+    padding: 8px;
+}
+
+#More-Options .Options-Item {
+    display: block;
+}
+
+/* Hide "actions" from showing up in More-Options, will be shown depending on
+/* media query
+*/
+#More-Options .Options-All-Items,
+#More-Options .Other-Items {
+    display: none;
+}
+
+main {
+    padding: 8px;
+}
+
+main a {
+    transition-property: color;
+    transition-duration: var(--link-transition-duration);
+    transition-timing-function: ease-out;
+}
+
+main a:link,
+main a:visited {
+    color: var(--secondary-color);
+}
+
+main a:hover {
+    color: var(--secondary-color-light);
+}
+
+main a:active {
+    color: var(--secondary-color-dark);
+}
+
+.Button {
+    font-size: var(--font-size-button);
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    background-color: var(--secondary-color);
+    transition-property: box-shadow, background-color;
+    transition-duration: var(--link-transition-duration);
+    transition-timing-function: ease-out;
+    box-shadow: 0px 2px 4px var(--shadow-color);
+}
+
+.Button:hover,
+.Button:focus {
+    box-shadow: 0px 2px 8px 2px var(--shadow-color);
+    background-color: var(--secondary-color-light);
+}
+
+.Button:active {
+    box-shadow: 0px 2px 5px var(--shadow-color);
+    background-color: var(--secondary-color-dark);
+}
+
+footer {
+    height: var(--footer-height);
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--on-primary-color);
+    font-weight: 600;
     padding: 8px;
 }
 
