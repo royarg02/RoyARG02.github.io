@@ -30,7 +30,7 @@
     text-align: left;
     margin: 0 auto;
     flex-shrink: 0;
-    flex-basis: 480px;
+    flex-basis: 360px;
     color: var(--secondary-color);
 }
 
