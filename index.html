@@ -28,14 +28,13 @@
     <meta name="mobile-web-app-capable" content="yes">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./css/fontawesome/css/all.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/section.css">
     <link rel="stylesheet" href="./css/media-query.css">
     <link rel="stylesheet" href="./css/themes.css">
 
     <!-- Favicon -->
-    <link rel="icon" href="./assets/avatar.jpg" sizes="16x16 32x32" type="image/png">
+	<link rel="icon" href="./assets/avatar.jpg" sizes="16x16 32x32" type="image/png">
 
     <!-- Miscellaneous -->
     <link rel="author" href="https://github.com/RoyARG02">
@@ -49,69 +48,35 @@
 <body>
 
     <header id="AppBar">
-        <h1 id="Title"><a href="#Intro" tabindex="1">Anurag Roy</a></h1>
-        <div id="Options">
-            <button id="Avatar" tabindex="0" aria-label="Quick links menu"></button>
-            <div id="More-Options">
-                <a class="Options-Item Options-All-Items" href="#Blogs"><i class="fas fa-feather-alt"></i>Blogs</a>
-                <a class="Options-Item Options-All-Items" href="#Talks"><i class="fas fa-microphone-alt"></i>Talks</a>
-                <a class="Options-Item Options-All-Items" href="#Contributions"><i
-                        class="fas fa-code"></i>Contributions</a>
-                <a class="Options-Item Options-All-Items" href="#Projects"><i class="fas fa-tools"></i>Projects</a>
-                <a class="Options-Item Other-Items" href="https://royarg02.github.io/assets/AnuragRoy_Dec20.pdf"><i
-                        class="fas
-                    fa-file-pdf"></i>Resume</a>
-                <a class="Options-Item Other-Items" href="https://github.com/RoyARG02" target="_blank"><i
-                        class="fab fa-github-square"></i>Github</a>
-                <a class="Options-Item" href="https://twitter.com/_royarg" target="_blank"><i
-                        class="fab fa-twitter-square"></i>Twitter</a>
-                <a class="Options-Item" href="https://stackoverflow.com/users/12045444/anurag-roy" target="_blank"><i
-                        class="fab fa-stack-overflow"></i>StackOverflow</a>
-                <a class="Options-Item" href="https://linkedin.com/in/royarg" target="_blank"><i
-                        class="fab fa-linkedin"></i>LinkedIn</a>
-                <a class="Options-Item" href="https://medium.com/@royarg" target="_blank"><i
-                        class="fab fa-medium"></i>Medium</a>
-                <a class="Options-Item" href="mailto:anuragr9847@gmail.com" target="_blank"><i
-                        class="fas fa-envelope"></i>Send a mail</a>
-                <a class="Options-Item" href="https://github.com/RoyARG02/RoyARG02.github.io/"><i
-                        class="fas fa-file-code"></i>View source</a>
-                <p class="caption">Powered by good ol' HTML5 and CSS3.</p>
-            </div>
-        </div>
+        <a href="#Intro" id="avatar"><img src="./assets/avatar.jpg" alt="Anurag Roy"/></a>
+        <h1 id="Title"><a href="#Intro">Anurag Roy</a></h1>
         <nav id="Actions">
-            <div class="ButtonBar">
-                <a href="#Blogs" tabindex="1" title="Blogs I've written">Blogs</a>
-                <a href="#Talks" tabindex="1" title="Talks I've given">Talks</a>
-                <a href="#Contributions" tabindex="1" title="My contributions">Contributions</a>
-                <a href="#Projects" tabindex="1" title="Projects I've worked on">Projects</a>
-                <a class="Other-Actions" href="https://royarg02.github.io/assets/AnuragRoy_Dec20.pdf" tabindex="1"
-                    title="See my Resume">Resume</a>
-                <a class="Other-Actions" href="https://github.com/RoyARG02" tabindex="1" target="_blank"
-                    title="See my Github Page">Github</a>
-            </div>
+            <a href="#Blogs" title="Blogs I've written">Blogs</a
+            ><a href="#Talks" title="Talks I've given">Talks</a
+            ><a href="#Contributions" title="My contributions">Contributions</a
+            ><a href="#Projects" title="Projects I've worked on">Projects</a>
         </nav>
     </header>
     <main>
         <section id="Intro" class="Section">
-            <h2 class="Heading" tabindex="0">Hi there!</h2>
+            <h2 class="Heading">Hi there!</h2>
             <div class="Content">
-                <p class="Content-Text">I'm Anurag Roy. I'm a software developer who predominantly works on the
-                    Flutter SDK and Linux/Unix and occasionally with frontend web.
-                <p class="Content-Text">I had previously dabbled a bit with Android native, AI and UI/UX design back in
-                    the day.</p>
-                <p class="Content-Text">Speaking of programming languages, C, Java, Dart, and shell are my frote, but I
-                    can use Python and C++ to code a program or two.</p>
-                <p class="Content-Text">The bar at top has quick links to jump to different sections. Enjoy the smooth
-                    scrolling.
-                </p>
+				<p class="Content-Text"> I'm Anurag Roy. I'm a software
+				developer who predominantly works on the Flutter SDK and
+				Linux/Unix and occasionally with frontend web.</p>
+				<p class="Content-Text">I had previously dabbled a bit with
+				Android native, AI and UI/UX design back in the day.</p>
+				<p class="Content-Text">Speaking of programming languages, C,
+				Java, Dart, and shell are my frote, but I can use Python and C++
+				to code a program or two.</p>
             </div>
         </section>
         <section id="Blogs" class="Section">
-            <h2 class="Heading" tabindex="0">Blogs</h2>
+            <h2 class="Heading">Blogs</h2>
             <div class="Content">
-                <p class="Content-Text">Following blogs/articles deal with the nuances of the Java programming language
-                    and Flutter framework.
-                </p>
+				<p class="Content-Text">Following blogs/articles deal with the
+				nuances of the Java programming language and Flutter
+				framework.</p>
                 <div class="Content-Table" role="table" aria-label="Blogs list">
                     <div class="Content-Table-Row-Header" role="row">
                         <div class="Content-Table-Header" role="columnheader">
@@ -119,21 +84,22 @@
                         </div>
                     </div>
                     <div class="Content-Table-Row-Delimiter" role="row">
-                        <div class="Content-Table-Cell" role="cell">Flutter BLoC, from the perspective of a beginner
-                        </div>
+						<div class="Content-Table-Cell" role="cell">Flutter
+						BLoC, from the perspective of a beginner</div>
                         <div class="Content-Table-Cell Button-Entry" role="cell">
-                            <a class="Button" role="button"
-                                href="https://medium.com/@royarg/flutter-bloc-from-the-perspective-of-a-beginner-d249d907eeff"
-                                title="Read blog">Read</a>
-                        </div>
+							<a class="Button" role="button"
+							href="https://medium.com/@royarg/flutter-bloc-from-the-perspective-of-a-beginner-d249d907eeff"
+							title="Read blog">Read</a>
+						</div>
                     </div>
                     <div class="Content-Table-Row-Delimiter" role="row">
-                        <div class="Content-Table-Cell" role="cell">The development cycle of Flutter: A demonstration
+						<div class="Content-Table-Cell" role="cell">The
+							development cycle of Flutter: A demonstration
                         </div>
                         <div class="Content-Table-Cell Button-Entry" role="cell">
-                            <a class="Button" role="button"
-                                href="https://medium.com/@royarg/the-development-cycle-of-flutter-a-demonstration-a108f8064114"
-                                title="Read blog">Read</a>
+							<a class="Button" role="button"
+							href="https://medium.com/@royarg/the-development-cycle-of-flutter-a-demonstration-a108f8064114"
+							title="Read blog">Read</a>
                         </div>
                     </div>
                     <div class="Content-Table-Row-Header" role="row">
@@ -142,26 +108,29 @@
                         </div>
                     </div>
                     <div class="Content-Table-Row-Delimiter" role="row">
-                        <div class="Content-Table-Cell" role="cell">Just a tad bit of Java: Flow of Control
+						<div class="Content-Table-Cell" role="cell">Just a tad
+							bit of Java: Flow of Control
                         </div>
-                        <div class="Content-Table-Cell" role="cell"><span>Co-authored with <a
-                                    href="https://arig23498.github.io" target="_blank"
-                                    title="Visit portfolio website">Aritra Roy
-                                    Gosthipaty</a></span>
+						<div class="Content-Table-Cell"
+							role="cell"><span>Co-authored with <a
+							href="https://arig23498.github.io" target="_blank"
+							title="Visit portfolio website">Aritra Roy
+							Gosthipaty</a></span>
                         </div>
                         <div class="Content-Table-Cell Button-Entry" role="cell">
-                            <a class="Button" role="button"
-                                href="https://medium.com/@aritra.born2fly/just-a-tad-bit-of-java-e533147bd831"
-                                title="Read blog">Read</a>
+							<a class="Button" role="button"
+							href="https://medium.com/@aritra.born2fly/just-a-tad-bit-of-java-e533147bd831"
+							title="Read blog">Read</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="Talks" class="Section">
-            <h2 class="Heading" tabindex="0">Talks</h2>
+            <h2 class="Heading">Talks</h2>
             <div class="Content">
-                <p class="Content-Text">These are more like "tech-sessions" about using Flutter.</p>
+				<p class="Content-Text">These are more like "tech-sessions"
+				about using Flutter.</p>
                 <div class="Content-Table" role="table" aria-label="Talks list">
                     <div class="Content-Table-Row-Header" role="row">
                         <div class="Content-Table-Header" role="columnheader">
@@ -169,114 +138,144 @@
                         </div>
                     </div>
                     <div class="Content-Table-Row-Delimiter" role="row">
-                        <div class="Content-Table-Cell" role="cell">Flutter: Using Packages and Assets</div>
-                        <div class="Content-Table-Cell" role="cell">DSC NSEC: Full Stack Projects</div>
-                        <div class="Content-Table-Cell Button-Entry" role="cell"><a class="Button" role="button"
-                                href="https://www.youtube.com/watch?v=398MTLE_6Xs"
-                                title="Watch session on Youtube">Watch</a>
+						<div class="Content-Table-Cell" role="cell">Flutter:
+						Using Packages and Assets</div>
+						<div class="Content-Table-Cell" role="cell">DSC NSEC:
+						Full Stack Projects</div>
+						<div class="Content-Table-Cell Button-Entry"
+						role="cell">
+							<a class="Button" role="button"
+							href="https://www.youtube.com/watch?v=398MTLE_6Xs"
+							title="Watch session on Youtube">Watch</a>
                         </div>
                         <div class="Content-Table-Cell Button-Entry" role="cell">
-                            <a class="Button" role="button" href="https://bit.ly/packages-and-assets"
-                                title="View presentation slides">Slides</a>
+							<a class="Button" role="button"
+							href="https://bit.ly/packages-and-assets"
+							title="View presentation slides">Slides</a>
                         </div>
                     </div>
                     <div class="Content-Table-Row-Delimiter" role="row">
-                        <div class="Content-Table-Cell" role="cell">Flutter: Working with Widgets</div>
-                        <div class="Content-Table-Cell" role="cell">DSC NSEC: Full Stack Projects</div>
-                        <div class="Content-Table-Cell Button-Entry" role="cell"><a class="Button" role="button"
-                                href="https://www.youtube.com/watch?v=98ySGG1gKd8"
-                                title="Watch session on Youtube">Watch</a>
+						<div class="Content-Table-Cell" role="cell">Flutter:
+						Working with Widgets</div>
+						<div class="Content-Table-Cell" role="cell">DSC NSEC:
+						Full Stack Projects</div>
+						<div class="Content-Table-Cell Button-Entry"
+						role="cell">
+							<a class="Button" role="button"
+							href="https://www.youtube.com/watch?v=98ySGG1gKd8"
+							title="Watch session on Youtube">Watch</a>
                         </div>
                         <div class="Content-Table-Cell Button-Entry" role="cell">
-                            <a class="Button" role="button" href="https://bit.ly/working-with-widgets"
-                                title="View presentation slides">Slides</a>
+							<a class="Button" role="button"
+							href="https://bit.ly/working-with-widgets"
+							title="View presentation slides">Slides</a>
                         </div>
                     </div>
                     <div class="Content-Table-Row-Delimiter" role="row">
-                        <div class="Content-Table-Cell" role="cell">Introduction to Flutter</div>
-                        <div class="Content-Table-Cell" role="cell">DSC NSEC: Full Stack Projects</div>
-                        <div class="Content-Table-Cell Button-Entry" role="cell"><a class="Button" role="button"
-                                href="https://www.youtube.com/watch?v=A6tJDejtuOo"
-                                title="Watch session on Youtube">Watch</a>
+						<div class="Content-Table-Cell" role="cell">Introduction
+						to Flutter</div>
+						<div class="Content-Table-Cell" role="cell">DSC NSEC:
+						Full Stack Projects</div>
+						<div class="Content-Table-Cell Button-Entry"
+						role="cell">
+							<a class="Button" role="button"
+							href="https://www.youtube.com/watch?v=A6tJDejtuOo"
+							title="Watch session on Youtube">Watch</a>
                         </div>
                         <div class="Content-Table-Cell Button-Entry" role="cell">
-                            <a class="Button" role="button" href="https://bit.ly/intro-to-flutter"
-                                title="View presentation slides">Slides</a>
+							<a class="Button" role="button"
+							href="https://bit.ly/intro-to-flutter" title="View
+							presentation slides">Slides</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="Contributions" class="Section">
-            <h2 class="Heading" tabindex="0">Contributions</h2>
+            <h2 class="Heading">Contributions</h2>
             <div class="Content">
-                <p class="Content-Text">Contributions which don't involve talks or blogs.
-                </p>
-                <div class="Content-Table" role="table" aria-label="Contributions list">
+				<p class="Content-Text">Contributions which don't involve talks
+				or blogs.</p>
+				<div class="Content-Table" role="table"
+				aria-label="Contributions list">
                     <div class="Content-Table-Row-Header" role="row">
                         <div class="Content-Table-Header" role="columnheader">
                             Flutter framework
                         </div>
-                        <div class="Content-Table-Header Button-Entry" role="cell"><a class="Button" role="button"
-                                href="https://github.com/flutter/flutter/commits?author=RoyARG02"
-                                title="Commits to flutter/flutter">Commits</a>
+						<div class="Content-Table-Header Button-Entry"
+						role="cell">
+							<a class="Button" role="button"
+							href="https://github.com/flutter/flutter/commits?author=RoyARG02"
+							title="Commits to flutter/flutter">Commits</a>
                         </div>
                     </div>
                     <div class="Content-Table-Row-Delimiter" role="row">
-                        <div class="Content-Table-Cell" role="cell">These commits range from adding features to
-                            the "widget framework" to tooling.
-                        </div>
+						<div class="Content-Table-Cell" role="cell">These
+						commits range from adding features to the "widget
+						framework" to tooling.</div>
                     </div>
                     <div class="Content-Table-Row-Header" role="row">
                         <div class="Content-Table-Header" role="columnheader">
                             StackOverflow
                         </div>
-                        <div class="Content-Table-Header Button-Entry" role="cell"><a class="Button" role="button"
-                                href="https://stackoverflow.com/users/12045444/anurag-roy"
-                                title="Visit my StackOverflow profile">Profile</a>
+						<div class="Content-Table-Header Button-Entry"
+						role="cell">
+							<a class="Button" role="button"
+							href="https://stackoverflow.com/users/12045444/anurag-roy"
+							title="Visit my StackOverflow profile">Profile</a>
                         </div>
                     </div>
                     <div class="Content-Table-Row-Delimiter" role="row">
-                        <div class="Content-Table-Cell" role="cell"><span>I mostly answered <code>[Flutter]</code>
-                                questions uptil now.</span></div>
+						<div class="Content-Table-Cell" role="cell"><span>I
+						mostly answered <code>[Flutter]</code> questions uptil
+						now.</span></div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="Projects" class="Section">
-            <h2 class="Heading" tabindex="0">Projects</h2>
+            <h2 class="Heading">Projects</h2>
             <div class="Content">
-                <p class="Content-Text">The projects that I've worked on, some with the help of collaborators listed.
-                </p>
-                <div class="Content-Table" role="table" aria-label="Projects list">
+				<p class="Content-Text">The projects that I've worked on, some
+				with the help of collaborators listed.</p>
+				<div class="Content-Table" role="table" aria-label="Projects
+				list">
                     <div class="Content-Table-Row-Header" role="row">
                         <div class="Content-Table-Header" role="columnheader">
                             SOIF
                         </div>
-                        <div class="Content-Table-Header Button-Entry" role="cell"><a class="Button" role="button"
-                                href="https://github.com/RoyARG02/soil_moisture_app"
-                                title="View Source of Mobile application">Mobile Application</a>
+						<div class="Content-Table-Header Button-Entry"
+						role="cell">
+							<a class="Button" role="button"
+							href="https://github.com/RoyARG02/soil_moisture_app"
+							title="View Source of Mobile application">Mobile
+							Application</a>
                         </div>
-                        <div class="Content-Table-Header Button-Entry" role="cell"><a class="Button" role="button"
-                                href="https://github.com/forkbomb-666/drip_irrigation_server"
-                                title="View Source of Server">Server</a>
+						<div class="Content-Table-Header Button-Entry"
+						role="cell">
+							<a class="Button" role="button"
+							href="https://github.com/forkbomb-666/drip_irrigation_server"
+							title="View Source of Server">Server</a>
                         </div>
                     </div>
                     <div class="Content-Table-Row" role="row">
                         <div class="Content-Table-Cell caption" role="cell">
-                            (Mobile application, cloud based analytics, weather monitoring)
+							(Mobile application, cloud based analytics, weather
+							monitoring)
                         </div>
                     </div>
                     <div class="Content-Table-Row" role="row">
-                        <div class="Content-Table-Cell" role="cell">An automated drip irrigation system and weather
-                            monitoring(soil moisture, illuminance, temperature and humidity) system built primarily
-                            using an ESP8266. Accompanied by a mobile application which works along with a MongoDB
-                            database through REST API.
-                        </div>
+						<div class="Content-Table-Cell" role="cell">An automated
+						drip irrigation system and weather monitoring(soil
+						moisture, illuminance, temperature and humidity) system
+						built primarily using an ESP8266. Accompanied by a
+						mobile application which works along with a MongoDB
+						database through REST API.</div>
                     </div>
                     <div class="Content-Table-Row-Delimiter" role="row">
                         <div class="Content-Table-Column" role="cell">
-                            <div class="Content-Table-Cell" role="columnheader" style="font-weight: 600">
+							<div class="Content-Table-Cell" role="columnheader"
+							style="font-weight: 600">
                                 Tech Stack
                             </div>
                             <div class="Content-Table-Cell" role="cell">
@@ -293,18 +292,22 @@
                             </div>
                         </div>
                         <div class="Content-Table-Column" role="cell">
-                            <div class="Content-Table-Cell" role="columnheader" style="font-weight: 600">
-                                Collaborators
-                            </div>
-                            <div class="Content-Table-Cell" role="cell"><span><a href="https://arig23498.github.io"
-                                        target="_blank">Aritra Roy
-                                        Gosthipaty</a></span></div>
-                            <div class="Content-Table-Cell" role="cell"><span><a href="https://ayushthakur.gitbook.io"
-                                        target="_blank">Ayush
-                                        Thakur</a></span></div>
-                            <div class="Content-Table-Cell" role="cell"><span><a href="https://snehangshu.now.sh"
-                                        target="_blank">Snehangshu
-                                        Bhattacharya</a></span></div>
+							<div class="Content-Table-Cell" role="columnheader"
+							style="font-weight: 600">Collaborators</div>
+							<div class="Content-Table-Cell" role="cell">
+								<span><a href="https://arig23498.github.io"
+								target="_blank">Aritra Roy
+								Gosthipaty</a></span>
+							</div>
+							<div class="Content-Table-Cell" role="cell">
+								<span><a href="https://ayushthakur.gitbook.io"
+								target="_blank">Ayush Thakur</a></span>
+							</div>
+							<div class="Content-Table-Cell" role="cell">
+								<span><a href="https://snehangshu.now.sh"
+								target="_blank">Snehangshu
+								Bhattacharya</a></span>
+							</div>
                         </div>
                     </div>
                     <div class="Content-Table-Row-Header" role="row">
@@ -313,19 +316,22 @@
                         </div>
                     </div>
                     <div class="Content-Table-Row" role="row">
-                        <div class="Content-Table-Cell caption" role="cell">
-                            (Object Detection, Edge Computing, Mobile application)
-                        </div>
+						<div class="Content-Table-Cell caption" role="cell">
+						(Object Detection, Edge Computing, Mobile application)
+						</div>
                     </div>
                     <div class="Content-Table-Row" role="row">
-                        <div class="Content-Table-Cell" role="cell">A surveillance system powered by Raspberry Pi 3B+
-                            which uses SSD Model trained on Caffe framework for efficient utilization of bandwith and
-                            storage. Accompanied by a mobile application providing controls, notifications of detection
-                            and access to recorded footage.</div>
+						<div class="Content-Table-Cell" role="cell">A
+						surveillance system powered by Raspberry Pi 3B+ which
+						uses SSD Model trained on Caffe framework for efficient
+						utilization of bandwith and storage. Accompanied by a
+						mobile application providing controls, notifications of
+						detection and access to recorded footage.</div>
                     </div>
                     <div class="Content-Table-Row-Delimiter" role="row">
                         <div class="Content-Table-Column" role="cell">
-                            <div class="Content-Table-Cell" role="columnheader" style="font-weight: 600">
+							<div class="Content-Table-Cell" role="columnheader"
+							style="font-weight: 600">
                                 Tech Stack
                             </div>
                             <div class="Content-Table-Cell" role="cell">
@@ -348,27 +354,33 @@
                             </div>
                         </div>
                         <div class="Content-Table-Column" role="cell">
-                            <div class="Content-Table-Cell" role="columnheader" style="font-weight: 600">
-                                Collaborators
-                            </div>
-                            <div class="Content-Table-Cell" role="cell"><span><a
-                                        href="https://twitter.com/AnkanChattapad1" target="_blank">Ankan
-                                        Chattapadhyay</a></span></div>
-                            <div class="Content-Table-Cell" role="cell"><span><a href="https://github.com/Chandril98"
-                                        target="_blank">Chandril
-                                        Mukherjee</a></span></div>
-                            <div class="Content-Table-Cell" role="cell"><span><a
-                                        href="https://twitter.com/purkaitsuman1" target="_blank">Suman
-                                        Purkait</a></span></div>
+							<div class="Content-Table-Cell" role="columnheader"
+							style="font-weight: 600">Collaborators</div>
+                            <div class="Content-Table-Cell" role="cell">
+								<span><a
+								href="https://twitter.com/AnkanChattapad1"
+								target="_blank">Ankan Chattapadhyay</a></span>
+							</div>
+							<div class="Content-Table-Cell" role="cell">
+								<span><a href="https://github.com/Chandril98"
+								target="_blank">Chandril Mukherjee</a></span>
+							</div>
+                            <div class="Content-Table-Cell" role="cell">
+								<span><a
+								href="https://twitter.com/purkaitsuman1"
+								target="_blank">Suman Purkait</a></span>
+							</div>
                         </div>
                     </div>
                     <div class="Content-Table-Row-Header" role="row">
                         <div class="Content-Table-Header" role="columnheader">
                             This website
                         </div>
-                        <div class="Content-Table-Header Button-Entry" role="cell"><a class="Button" role="button"
-                                href="https://github.com/RoyARG02/RoyARG02.github.io/"
-                                title="View Source in Github">Github</a>
+						<div class="Content-Table-Header Button-Entry"
+						role="cell">
+							<a class="Button" role="button"
+							href="https://github.com/RoyARG02/RoyARG02.github.io/"
+							title="View Source in Github">Github</a>
                         </div>
                     </div>
                     <div class="Content-Table-Row" role="row">
@@ -377,13 +389,17 @@
                         </div>
                     </div>
                     <div class="Content-Table-Row" role="row">
-                        <div class="Content-Table-Cell" role="cell">This website originally was meant to be built on
-                            Flutter Web, but unsatifying results made me switch to HTML + CSS instead. Also got to try
-                            out my newly acquired frontend web development skills I had learnt during that time.</div>
+						<div class="Content-Table-Cell" role="cell">This website
+						originally was meant to be built on Flutter Web, but
+						unsatifying results made me switch to HTML + CSS
+						instead. Also got to try out my newly acquired frontend
+						web development skills I had learnt during that
+						time.</div>
                     </div>
                     <div class="Content-Table-Row-Delimiter" role="row">
                         <div class="Content-Table-Column" role="cell">
-                            <div class="Content-Table-Cell" role="columnheader" style="font-weight: 600">
+							<div class="Content-Table-Cell" role="columnheader"
+							style="font-weight: 600">
                                 Tech Stack
                             </div>
                             <div class="Content-Table-Cell" role="cell">
@@ -405,10 +421,24 @@
         </section>
     </main>
     <footer>
-        <div id="copyright">Copyright &copy; Anurag Roy 2020, 2021.</div>
-        <div id="gpg">PGP fingerprint:
-            <code><a href="./assets/anurag.aexpk" title="Get public key" type="application/pgp-keys">F304 C077 661C EE88 30C5  FDC1 D794 9DA4 D7EB D6CF</a></code>
+        <div id="footer-left">
+            <div id="copyright">Copyright &copy; Anurag Roy 2020, 2021.</div>
+			<div id="gpg">PGP fingerprint: <code><a href="./assets/anurag.aexpk"
+			title="Get public key" type="application/pgp-keys">F304 C077 661C
+			EE88 30C5  FDC1 D794 9DA4 D7EB D6CF</a></code></div>
         </div>
+        <div id="footer-right">
+            <div id="powered-by">Powered by good ol' HTML5 and CSS3.</div>
+			<a href="https://royarg02.github.io/assets/AnuragRoy_Dec20.pdf">Resume</a>
+            <a href="https://github.com/RoyARG02" target="_blank">Github</a>
+            <a href="https://twitter.com/_royarg" target="_blank">Twitter</a>
+			<a href="https://stackoverflow.com/users/12045444/anurag-roy" target="_blank">StackOverflow</a>
+            <a href="https://linkedin.com/in/royarg" target="_blank">LinkedIn</a>
+            <a href="https://medium.com/@royarg" target="_blank">Medium</a>
+            <a href="mailto:anuragr9847@gmail.com" target="_blank">Send&nbsp;a&nbsp;mail</a>
+            <a href="https://github.com/RoyARG02/RoyARG02.github.io/">View&nbsp;source</a>
+        </div>
+
     </footer>
 </body>
 

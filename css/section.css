@@ -16,11 +16,15 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+/* All sizes converted to rem
+Conversion: px/16=rem
+*/
+
 .Section {
     display: flex;
     align-items: stretch;
     flex-direction: row;
-    padding: 16px 0px;
+    padding: 1rem 0rem;
 }
 
 .Section .Heading {
@@ -28,9 +32,9 @@
     font-weight: 400;
     display: block;
     text-align: left;
-    margin: 0 auto;
+    margin: 0em auto;
     flex-shrink: 0;
-    flex-basis: 360px;
+    flex-basis: 22.5rem;
     color: var(--secondary-color);
 }
 
@@ -38,19 +42,19 @@
     flex-grow: 1;
     display: block;
     box-sizing: border-box;
-    padding: 0px 8px;
+    padding: 0rem 0.5rem;
 }
 
 .Section .Content-Text {
-    font-size: var(--font-size-headline5);
-    margin: 0px 0px 24px 0px;
+    font-size: var(--font-size-bodytext1);
+    margin: 0rem 0rem 1.5rem 0rem;
     text-decoration: none;
 }
 
 .Section .Content-Table {
     width: 100%;
-    margin: 0px 0px 24px 0px;
-    font-size: var(--font-size-subtitle1);
+    margin: 0rem 0rem 1.5rem 0rem;
+    font-size: var(--font-size-bodytext1);
     border-collapse: collapse;
 }
 
@@ -64,7 +68,7 @@
 }
 
 .Section .Content-Table .Content-Table-Row-Delimiter {
-    border-bottom: 1px solid var(--secondary-color);
+    border-bottom: 0.0625rem solid var(--secondary-color);
 }
 
 .Section .Content-Table .Content-Table-Column {
@@ -78,7 +82,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 16px 8px;
+    padding: 1rem 0.5rem;
     flex-basis: 50%;
     flex-grow: 1;
 }
@@ -89,7 +93,7 @@
     align-items: center;
     font-size: var(--font-size-headline6);
     font-weight: 600;
-    padding: 16px 0px 0px;
+    padding: 1rem 0rem 0rem;
     flex-grow: 1;
 }
 
@@ -101,20 +105,20 @@
 
 .Section .Content-Table .Content-Table-Row>.Content-Table-Cell:first-child,
 .Section .Content-Table .Content-Table-Row-Delimiter>.Content-Table-Cell:first-child {
-    padding-left: 0px;
+    padding-left: 0rem;
 }
 
 .Section .Content-Table .Content-Table-Row>.Content-Table-Cell:last-child,
 .Section .Content-Table .Content-Table-Row-Delimiter>.Content-Table-Cell:last-child {
-    padding-right: 0px;
+    padding-right: 0rem;
 }
 
 .Section .Content-Table .Content-Table-Column:first-child>.Content-Table-Cell {
-    padding-left: 0px;
+    padding-left: 0rem;
 }
 
 .Section .Content-Table .Content-Table-Column:last-child>.Content-Table-Cell {
-    padding-right: 0px;
+    padding-right: 0rem;
 }
 
 .Section .Content-Table .Button-Entry {

@@ -16,7 +16,11 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-@media screen and (max-width: 1024px) {
+/* All sizes converted to rem
+Conversion: px/16=rem
+*/
+
+@media screen and (max-width: 50rem) {
     .Section {
         flex-direction: column;
     }
@@ -25,60 +29,41 @@
     }
     .Section .Content-Text,
     .Section .Content-Table {
-        margin: 24px 0px 0px;
+        margin: 1.5rem 0rem 0rem;
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 25rem) {
     .Section .Content-Table .Content-Table-Row,
     .Section .Content-Table .Content-Table-Row-Header,
     .Section .Content-Table .Content-Table-Row-Delimiter {
-        flex-direction: column;
+        flex-direction:column;
     }
     .Section .Content-Table .Content-Table-Cell,
     .Content-Table .Content-Table-Header {
-        padding: 16px 0px;
+        padding: 1rem 0rem;
         justify-content: center;
     }
 }
 
-@media screen and (max-width: 840px) {
-    #Actions .Other-Actions {
-        display: none;
-    }
-    #More-Options .Other-Items {
+@media screen and (max-width: 33.75rem) {
+    #Title, #Actions {
         display: block;
+        float: none;
+    }
+
+    #Actions a {
+        margin: 0rem 0.125rem;
+    }
+
+    html {
+        scroll-padding-top: calc(var(--header-height) + var(--header-line-height) + 0.5rem); /* adjust for actions on bottom */
     }
 }
 
-@media screen and (max-width: 610px) {
-    .ButtonBar {
-        display: none;
-    }
-    #More-Options .Options-All-Items {
-        display: block;
-    }
-    @media screen and (max-height: 840px) {
-        #More-Options {
-            height: 75vh;
-        }
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #More-Options {
-        min-width: 55vw;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    .Options-Item i {
-        display: none;
-    }
-}
-
-@media screen and (max-height: 540px) {
-    #More-Options {
-        height: 60vh;
+@media screen and (max-width: 56.25rem) {
+    footer #footer-left, footer #footer-right {
+        float: none;
+        text-align: center;
     }
 }

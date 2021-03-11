@@ -16,29 +16,31 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+/* All sizes converted to rem
+Conversion: px/16=rem
+*/
+
 :root {
-    --header-height: 56px;
-    --header-line-height: 48px;
-    --footer-height: 48px;
-    --floating-action-button-size: 48px;
-    --options-menu-width: 250px;
+    --header-height: 3.5rem;
+    --header-line-height: 3rem;
+    --footer-height: 3rem;
+    --avatar-size: 3rem;
     --link-transition-duration: 150ms;
     --menu-transition-duration: 200ms;
-    --font-size-headline1: 96px;
-    --font-size-headline2: 60px;
-    --font-size-headline3: 48px;
-    --font-size-headline4: 34px;
-    --font-size-headline5: 24px;
-    --font-size-headline6: 20px;
-    --font-size-subtitle1: 16px;
-    --font-size-caption: 12px;
-    --font-size-button: 14px;
-    --icon-size: 24px;
+    --font-size-headline1: 6rem;
+    --font-size-headline2: 3.75rem;
+    --font-size-headline3: 3rem;
+    --font-size-headline4: 2.125rem;
+    --font-size-headline5: 1.5rem;
+    --font-size-headline6: 1.25rem;
+    --font-size-bodytext1: 1rem;
+    --font-size-caption: 0.75rem;
+    --font-size-button: 0.875rem;
 }
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: calc(var(--header-height) + 8px); /* main padding at top*/
+    scroll-padding-top: calc(var(--header-height) + 0.5rem); /* main padding at top*/
 }
 
 a {
@@ -46,7 +48,7 @@ a {
 }
 
 body {
-    margin: 0px;
+    margin: 0rem;
     background-color: var(--primary-color);
     font-family: 'Google Sans', 'Segoe UI', 'Ubuntu', 'Helvetica Neue', 'Noto Sans', sans-serif;
     color: var(--on-primary-color);
@@ -61,22 +63,21 @@ body code {
     /* affect the light theme
     */
     background-color: var(--primary-color-light);
-    height: var(--header-height);
+    min-height: var(--header-height);
     line-height: var(--header-line-height);
     box-sizing: border-box;
     position: sticky;
-    z-index: 1;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    padding: calc((var(--header-height) - var(--header-line-height)) / 2) 16px;
-    box-shadow: 0px 2px 6px var(--shadow-color);
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    padding: calc((var(--header-height) - var(--header-line-height)) / 2) 1rem;
+    box-shadow: 0rem 0.125rem 0.375rem var(--shadow-color);
 }
 
 #Title {
     box-sizing: border-box;
     float: left;
-    margin: 0px;
+    margin: 0rem;
     font-size: var(--font-size-headline6);
     font-weight: 600;
 }
@@ -101,30 +102,37 @@ body code {
     outline: none;
 }
 
-.ButtonBar {
+#Actions {
     float: right;
 }
 
 /* all of these are shaped like a button*/
 #Actions a,
-#More-Options a,
 .Button {
-    border-radius: 2px;
+    border-radius: 0.125rem;
     outline: none;
 }
 
-/* More-Options has its own margin, and font properties*/
 #Actions a,
 .Button {
-    margin: 0px 8px;
+    margin: 0rem 0.5rem;
     font-weight: 600;
-    padding: 8px;
+    padding: 0.5rem;
+}
+
+/* Remove left margin from the first action*/
+#Actions :first-child {
+    margin-left: 0rem;
+}
+
+/* Remove right margin from the last action*/
+#Actions :last-child {
+    margin-right: 0rem;
 }
 
 /* All of these appear on primary color*/
 #Actions a:link,
-#Actions a:visited,
-.Options-Item {
+#Actions a:visited {
     color: var(--on-primary-color);
 }
 
@@ -134,127 +142,29 @@ body code {
 }
 
 /* These behave the same when interacted with*/
-#Actions a, #More-Options a{
+#Actions a {
     transition-property: color, background-color;
     transition-duration: var(--link-transition-duration);
     transition-timing-function: ease-out;
 }
 
 #Actions a:hover,
-#Actions a:focus,
-#More-Options a:hover,
-#More-Options a:focus {
+#Actions a:focus {
     background-color: var(--secondary-color-light);
     color: var(--on-secondary-color);
 }
 
-#Actions a:active,
-#More-Options a:active {
+#Actions a:active {
     background-color: var(--secondary-color-dark);
     color: var(--on-secondary-color);
     outline: none;
 }
 
-#Options {
-    float: right;
-    position: relative;
-    margin-left: 8px;
-}
-
-#Avatar,
-#Avatar:visited {
-    display: block;
-    border-radius: var(--floating-action-button-size);
-    height: var(--floating-action-button-size);
-    width: var(--floating-action-button-size);
-    margin: 0px 0px 8px;
-    padding: 8px;
-    transition-property: box-shadow;
-    transition-duration: var(--link-transition-duration);
-    transition-timing-function: ease-out;
-    border-style: none;
-    outline: 0 !important;
-    background-color: var(--secondary-color);
-    background-image: url(../assets/avatar.jpg);
-    background-size: cover;
-}
-
-#More-Options {
-    transition-property: opacity;
-    transition-duration: var(--menu-transition-duration);
-    transition-timing-function: ease-out;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    overflow: auto;
-    right: 0;
-    background-color: var(--primary-color-light);
-    min-width: var(--options-menu-width);
-    border-radius: 6px;
-    padding: 8px;
-    box-shadow: 0px 2px 15px var(--shadow-color);
-}
-
-#Options:focus {
-    outline: none;
-}
-
-#Options:hover #Avatar,
-#Options:focus-within #Avatar {
-    box-shadow: 0px 2px 15px 2px var(--shadow-color);
-}
-
-#Options:hover #More-Options,
-#Options:focus-within #More-Options {
-    visibility: visible;
-    opacity: 1;
-}
-
-#Avatar:active {
-    box-shadow: none;
-}
-
-#Avatar:focus {
-    outline: none;
-}
-
-#Avatar::-moz-focus-inner {
-    border: 0;
-}
-
-.Options-Item {
-    margin: 2px 0px;
-    text-align: left;
-    font-size: var(--font-size-subtitle1);
-}
-
-.Options-Item i {
-    height: 32px;
-    width: 32px;
-    text-align: center;
-    vertical-align: top;
-    line-height: 32px;
-    font-size: var(--icon-size);
-    padding: 8px;
-}
-
-#More-Options .Options-Item {
-    display: block;
-}
-
-/* Hide "actions" from showing up in More-Options, will be shown depending on
-/* media query
-*/
-#More-Options .Options-All-Items,
-#More-Options .Other-Items {
-    display: none;
-}
-
 main {
-    padding: 8px;
+    padding: 0.5rem;
 }
 
-main a {
+main a, footer a {
     transition-property: color;
     transition-duration: var(--link-transition-duration);
     transition-timing-function: ease-out;
@@ -277,47 +187,73 @@ footer a:active {
     color: var(--secondary-color-dark);
 }
 
+#avatar img {
+    height: var(--avatar-size);
+    width: var(--avatar-size);
+    border-radius: var(--avatar-size);
+}
+
+#avatar,
+#avatar:visited {
+    float: left;
+    height: var(--avatar-size);
+    width: var(--avatar-size);
+    border-radius: var(--avatar-size);
+    margin-right: 0.5rem;
+    transition-property: box-shadow;
+    transition-duration: var(--link-transition-duration);
+    transition-timing-function: ease-out;
+}
+
+#avatar:hover {
+    box-shadow: 0rem 0.125rem 0.9375rem 0.125rem var(--shadow-color);
+}
+
+#avatar:active {
+    box-shadow: none;
+}
+
 .Button {
     font-size: var(--font-size-button);
     text-transform: uppercase;
-    letter-spacing: 1.25px;
+    letter-spacing: 0.078125rem;
     background-color: var(--secondary-color);
     transition-property: box-shadow, background-color;
     transition-duration: var(--link-transition-duration);
     transition-timing-function: ease-out;
-    box-shadow: 0px 2px 4px var(--shadow-color);
+    box-shadow: 0rem 0.125rem 0.25rem var(--shadow-color);
 }
 
 .Button:hover,
 .Button:focus {
-    box-shadow: 0px 2px 8px 2px var(--shadow-color);
+    box-shadow: 0rem 0.125rem 0.5rem 0.125rem var(--shadow-color);
     background-color: var(--secondary-color-light);
 }
 
 .Button:active {
-    box-shadow: 0px 2px 5px var(--shadow-color);
+    box-shadow: 0rem 0.125rem 0.3125rem var(--shadow-color);
     background-color: var(--secondary-color-dark);
 }
 
 footer {
-    height: var(--footer-height);
+    min-height: var(--footer-height);
     box-sizing: border-box;
-    text-align: center;
     color: var(--on-primary-color);
     font-weight: 600;
-    padding: 8px;
+    padding: 0.5rem;
 }
 
 .caption,
 footer {
     font-size: var(--font-size-caption);
-    line-height: var(--font-size-caption);
 }
 
-footer div {
-    padding: 2px 0px;
+footer #footer-left {
+    text-align: left;
+    float: left;
 }
 
-#WIP {
-    font-style: oblique;
+footer #footer-right {
+    text-align: right;
+    float: right;
 }
