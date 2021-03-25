@@ -164,6 +164,11 @@ main {
     padding: 0.5rem;
 }
 
+main, footer {
+    max-width: 75rem;
+    margin: auto;
+}
+
 main a, footer a {
     transition-property: color;
     transition-duration: var(--link-transition-duration);
