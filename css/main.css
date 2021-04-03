@@ -198,26 +198,6 @@ footer a:active {
     border-radius: var(--avatar-size);
 }
 
-#avatar,
-#avatar:visited {
-    float: left;
-    height: var(--avatar-size);
-    width: var(--avatar-size);
-    border-radius: var(--avatar-size);
-    margin-right: 0.5rem;
-    transition-property: box-shadow;
-    transition-duration: var(--link-transition-duration);
-    transition-timing-function: ease-out;
-}
-
-#avatar:hover {
-    box-shadow: 0rem 0.125rem 0.9375rem 0.125rem var(--shadow-color);
-}
-
-#avatar:active {
-    box-shadow: none;
-}
-
 .Button {
     font-size: var(--font-size-button);
     text-transform: uppercase;

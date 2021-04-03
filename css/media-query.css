@@ -46,7 +46,7 @@ Conversion: px/16=rem
     }
 }
 
-@media screen and (max-width: 33.75rem) {
+@media screen and (max-width: 31.25rem) {
     #Title, #Actions {
         display: block;
         float: none;
