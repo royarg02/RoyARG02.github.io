@@ -21,38 +21,37 @@ Conversion: px/16=rem
 */
 
 @media screen and (max-width: 50rem) {
-    .Section {
+    section {
         flex-direction: column;
     }
-    .Section .Heading {
+    section .section-heading {
         flex-basis: auto;
     }
-    .Section .Content-Text,
-    .Section .Content-Table {
+    section .section-content-para,
+    section .section-content-table {
         margin: 1.5rem 0rem 0rem;
     }
 }
 
 @media screen and (max-width: 25rem) {
-    .Section .Content-Table .Content-Table-Row,
-    .Section .Content-Table .Content-Table-Row-Header,
-    .Section .Content-Table .Content-Table-Row-Delimiter {
+    section .section-content-table .section-content-table-row {
         flex-direction:column;
     }
-    .Section .Content-Table .Content-Table-Cell,
-    .Content-Table .Content-Table-Header {
+    section .section-content-table .section-content-table-cell,
+    section .section-content-table .section-content-table-header {
         padding: 1rem 0rem;
         justify-content: center;
     }
 }
 
 @media screen and (max-width: 31.25rem) {
-    #Title, #Actions {
+    #header-title,
+    #header-link {
         display: block;
         float: none;
     }
 
-    #Actions a {
+    #header-link a {
         margin: 0rem 0.125rem;
     }
 
@@ -62,7 +61,8 @@ Conversion: px/16=rem
 }
 
 @media screen and (max-width: 56.25rem) {
-    footer #footer-left, footer #footer-right {
+    #footer-start,
+    #footer-end {
         float: none;
         text-align: center;
     }
