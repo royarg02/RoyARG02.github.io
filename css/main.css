@@ -50,12 +50,12 @@ a {
 body {
     margin: 0rem;
     background-color: var(--primary-color);
-    font-family: 'Google Sans', 'Segoe UI', 'Ubuntu', 'Helvetica Neue', 'Noto Sans', sans-serif;
+    font-family: sans-serif;
     color: var(--on-primary-color);
 }
 
 body code {
-    font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'monospace';
+    font-family: monospace;
 }
 
 hr {
