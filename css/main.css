@@ -190,6 +190,24 @@ footer a:active {
     color: var(--secondary-color-dark);
 }
 
+section {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    padding: 1rem 0rem;
+}
+
+section .heading {
+    display: block;
+    flex-shrink: 0;
+    flex-basis: 22.5rem;
+}
+
+section .section-content {
+    flex-grow: 1;
+    padding: 0rem 0.5rem;
+}
+
 .button {
     font-size: var(--font-size-button);
     text-transform: uppercase;
@@ -215,6 +233,60 @@ footer a:active {
 .button:active {
     box-shadow: 0rem 0.125rem 0.3125rem var(--shadow-color);
     background-color: var(--secondary-color-dark);
+}
+
+.heading {
+    font-size: var(--font-size-headline3);
+    font-weight: 400;
+    text-align: left;
+    margin: 0em 0em 0.5em 0em;
+    color: var(--secondary-color);
+}
+
+.subheading {
+    font-size: var(--font-size-headline6);
+    font-weight: 600;
+    margin: 0em;
+}
+
+.para {
+    font-size: var(--font-size-bodytext1);
+    margin: 0rem 0rem 1.5rem 0rem;
+    text-decoration: none;
+}
+
+.table {
+    width: 100%;
+    margin: 0rem 0rem 1.5rem 0rem;
+    border-collapse: collapse;
+}
+
+.table-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.table-row > :not(.button) {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.table-row >* {
+    margin: 0rem 0.5rem;
+}
+
+/* Selectively remove margin from the first and the last immediate child of
+   table-row class */
+
+.table-row > :first-child {
+    margin-left: 0rem;
+}
+
+.table-row > :last-child {
+    margin-right: 0rem;
 }
 
 footer {

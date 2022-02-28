@@ -20,31 +20,28 @@
 Conversion: px/16=rem
 */
 
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 60rem) {
     section {
         flex-direction: column;
     }
-    section .section-heading {
+    section .heading {
         flex-basis: auto;
-    }
-    section .section-content-para,
-    section .section-content-table {
-        margin: 1.5rem 0rem 0rem;
+        text-align: center;
     }
 }
 
-@media screen and (max-width: 25rem) {
-    section .section-content-table .section-content-table-row {
+@media screen and (max-width: 30rem) {
+    .table-row {
         flex-direction:column;
-    }
-    section .section-content-table .section-content-table-cell,
-    section .section-content-table .section-content-table-header {
-        padding: 1rem 0rem;
         justify-content: center;
     }
+
+    .table-row >* {
+        margin: 0rem 0rem 0.5rem 0rem;
+    }
 }
 
-@media screen and (max-width: 31.25rem) {
+@media screen and (max-width: 33.75rem) {
     #header-title,
     #header-link {
         display: block;
