@@ -64,6 +64,10 @@ hr {
     margin: 0rem;
 }
 
+li {
+    margin: 0em 0em 0.25em 0em;
+}
+
 #header {
     /* primary-color-light is used for elevation in dark theme, which doesn't
     /* affect the light theme
