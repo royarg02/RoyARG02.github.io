@@ -28,6 +28,11 @@ Conversion: px/16=rem
         flex-basis: auto;
         text-align: center;
     }
+    #footer-start,
+    #footer-end {
+        float: none;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 30rem) {
@@ -54,13 +59,5 @@ Conversion: px/16=rem
 
     html {
         scroll-padding-top: calc(var(--header-height) + var(--header-line-height) + 0.5rem); /* adjust for actions on bottom */
-    }
-}
-
-@media screen and (max-width: 56.25rem) {
-    #footer-start,
-    #footer-end {
-        float: none;
-        text-align: center;
     }
 }
