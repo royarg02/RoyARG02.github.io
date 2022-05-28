@@ -227,6 +227,18 @@ section .section-content {
     padding: 0rem 0.5rem;
 }
 
+pre {
+  font-size: var(--font-size-bodytext1);
+  background-color: var(--primary-color-light);
+  border-style: inset;
+  border-color: var(--secondary-color-light);
+  border-width: 0.125rem;
+  border-radius: 0.125rem;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 0.5rem;
+  overflow: scroll;
+}
+
 .button {
     font-size: var(--font-size-button);
     text-transform: uppercase;
