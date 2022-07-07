@@ -1,0 +1,101 @@
+<!--
+    Anurag Roy's portfolio website
+    Copyright (C) 2020-2022 Anurag Roy
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="subject" content="Important update for users of dwmblocks-royarg-git | Anurag Roy">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/media-query.css">
+    <link rel="stylesheet" href="../css/themes.css">
+
+    <!-- Miscellaneous -->
+    <link rel="author" href="https://royarg02.github.io">
+    <link rel="me" href="mailto:anuragr9847@gmail.com">
+    <meta name="copyright" content="Anurag Roy">
+    <link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0">
+
+    <title>Important update for users of dwmblocks-royarg-git | Anurag Roy</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1 id="header-title"><a href="../index.html#intro">Anurag Roy</a></h1>
+      <nav id="header-link">
+        <a href="../index.html#blogs" title="Blogs I've written">Blogs</a
+        ><a href="../index.html#talks" title="Talks I've given">Talks</a
+        ><a href="../index.html#contributions" title="My contributions">Contributions</a
+        ><a href="../index.html#projects" title="Projects I've worked on">Projects</a>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h2 class="heading">Important update for users of dwmblocks-royarg-git</h2>
+        <p class="para">07 Jul 2022</p>
+        <p class="para">
+        <a href="https://github.com/RoyARG02/dwmblocks-royarg-git/commit/c22f884e4e483d5be882fae97b3925209135545e"
+          target="_blank">Due to a versioning mishap</a>, an update to <a href="https://github.com/RoyARG02/dwmblocks-royarg-git" 
+          target="_blank"><strong>dwmblocks-royarg-git</strong></a> may display
+          the following message from <code>pacman</code>:
+        </p>
+        <pre>
+warning: dwmblocks-royarg-git: local (1.0.8f56741-1) is newer than royarg-repo (1.0.r75.8f56741c-1)</pre>
+        <p class="para">
+          It is recommended to upgrade anyway by reinstalling the package, regardless of <code>pacman</code> 
+          complaining about a downgrade:
+        </p>
+        <pre>
+$ sudo pacman -S dwmblocks-royarg-git
+warning: downgrading package dwmblocks-royarg-git (1.0.8f56741-1 => 1.0.r75.8f56741c-1)
+resolving dependencies...
+looking for conflicting packages...
+
+Package (1)                       Old Version    New Version         Net Change  Download Size
+
+royarg-repo/dwmblocks-royarg-git  1.0.8f56741-1  1.0.r75.8f56741c-1    0.00 MiB       0.01 MiB
+
+Total Download Size:   0.01 MiB
+Total Installed Size:  0.02 MiB
+Net Upgrade Size:      0.00 MiB
+
+:: Proceed with installation? [Y/n]</pre>
+        <hr>
+      </article>
+    </main>
+      <footer>
+        <div id="footer-start">
+          <div id="license-blog">This work is licensed under
+            <a href="https://creativecommons.org/licenses/by-nd/4.0" target="_blank">CC&nbsp;BY&#8209;ND&nbsp;4.0</a>.
+          </div>
+          <div id="license-code">Source code is licensed under
+            <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GNU&nbsp;GPL&nbsp;3.0</a>.
+          </div>
+        </div>
+        <div id="footer-end">
+          <div id="copyright">Copyright &copy; Anurag Roy 2020-2022.</div>
+          <div id="powered-by">
+            Powered by good ol' HTML5, CSS3 and
+            <a href="https://pages.github.com"> Github&nbsp;Pages</a>.
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
