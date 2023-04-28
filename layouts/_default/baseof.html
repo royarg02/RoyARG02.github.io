@@ -1,0 +1,75 @@
+{{/*  Anurag Roy's portfolio website
+      Copyright (C) 2020-2023  Anurag Roy
+
+      This program is free software: you can redistribute it and/or modify
+      it under the terms of the GNU Affero General Public License as
+      published by the Free Software Foundation, either version 3 of the
+      License, or (at your option) any later version.
+
+      This program is distributed in the hope that it will be useful,
+      but WITHOUT ANY WARRANTY; without even the implied warranty of
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+      GNU Affero General Public License for more details.
+
+      You should have received a copy of the GNU Affero General Public License
+      along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/}}
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ with .Description -}}
+      <meta name="description" content="{{ . }}">
+    {{- end }}
+    {{ with .Site.Params.includeAdditionalFavicons -}}
+      {{ range $entry := . -}}
+        <link rel="{{ $entry.name | default "icon" }}"{{ with $entry.size }} sizes="{{ . }}"{{ end }} href="{{ $entry.file | absURL }}">
+      {{ end }}
+    {{- end }}
+    {{ $CSS := resources.Match "css/*.css" | resources.Concat "style.css" | resources.Minify }}
+    <link rel="stylesheet" type="text/css" href="{{ $CSS.RelPermalink }}">
+    {{ if .IsPage }}
+      {{ $pageCSS := resources.GetMatch "css/conditionals/page.css" | resources.Minify }}
+      <link rel="stylesheet" type="text/css" href="{{ $pageCSS.RelPermalink }}">
+    {{ end }}
+    {{ with .Params.author -}}
+      <meta name="author" content="{{ . }}">
+    {{- end }}
+    {{ with .Params.license -}}
+      <link rel="license" href="{{ .url }}">
+    {{- end }}
+    {{ with .Params.redirect }}
+      <meta http-equiv="refresh" content="0; url={{ . }}" />
+    {{ end }}
+    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  </head>
+  <body>
+    {{ block "sidebar" . }}
+      {{ with .Params.redirect }}
+        <!-- this comment is made to get an "empty" block -->
+      {{ else }}
+        {{ partial "sidebar.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "header" . }}
+      {{ with .Params.redirect }}
+        <!-- this comment is made to get an "empty" block -->
+      {{ else }}
+        {{ partial "header.html" . }}
+      {{ end }}
+    {{ end }}
+    <main>
+      {{ block "main" . }}
+        {{ .Content }}
+      {{ end }}
+    </main>
+    {{ block "footer" . }}
+      {{ with .Params.redirect }}
+        <!-- this comment is made to get an "empty" block -->
+      {{ else }}
+        {{ partial "footer.html" . }}
+      {{ end }}
+    {{ end }}
+  </body>
+</html>

@@ -1,0 +1,8 @@
+<div {{ with (.Get "class") }}class="{{ . }}"{{ end }}>
+  <video controls width="{{ .Get "width" | default 500 }}">
+    <source src="{{ .Get "src" }}" type="{{ .Get "type" }}">
+  </video>
+  {{ with (.Get "caption") }}
+    <p>{{ . | markdownify }}</p>
+  {{ end }}
+</div>

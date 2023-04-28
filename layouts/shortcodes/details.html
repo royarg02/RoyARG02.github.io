@@ -1,0 +1,5 @@
+{{- $summary := .Get 0 -}}
+<details>
+  <summary><span class="summary-title">{{ $summary | markdownify }}</span><span class="summary-marker">⌵</span></summary>
+  {{ .Inner | markdownify }}
+</details>

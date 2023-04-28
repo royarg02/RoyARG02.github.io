@@ -1,0 +1,5 @@
+# Don't check for line length in code blocks
+line-length:
+  code_blocks: false
+# Markdownlint does not understand links after Hugo templates
+no-bare-urls: false
