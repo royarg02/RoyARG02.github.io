@@ -27,10 +27,10 @@
         <link rel="{{ $entry.name | default "icon" }}"{{ with $entry.size }} sizes="{{ . }}"{{ end }} href="{{ $entry.file | absURL }}">
       {{ end }}
     {{- end }}
-    {{ $CSS := resources.Match "css/*.css" | resources.Concat "style.css" | resources.Minify }}
+    {{ $CSS := resources.Match "css/*.css" | resources.Concat "style.css" | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" type="text/css" href="{{ $CSS.RelPermalink }}">
     {{ if .IsPage }}
-      {{ $pageCSS := resources.GetMatch "css/conditionals/page.css" | resources.Minify }}
+      {{ $pageCSS := resources.GetMatch "css/conditionals/page.css" | resources.Minify | resources.Fingerprint }}
       <link rel="stylesheet" type="text/css" href="{{ $pageCSS.RelPermalink }}">
     {{ end }}
     {{ with .Params.author -}}
