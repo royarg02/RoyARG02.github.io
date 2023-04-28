@@ -1,11 +1,23 @@
 # RoyARG02.github.io
 
-[Portfolio Website](https://royarg02.github.io)
+[Portfolio Website][1]
 
 ## Motivation
 
-During early 2020, I tried to use **Flutter Web** to make a _"Web-only"_ Flutter project. Initial implementations were unsatisfying though, as it was still in beta, and lacked some features; proper handling of mouse scrolling, for instance. (I'm sure Flutter web is much better now).
+During early 2020, I tried to use **Flutter Web** to make a _"Web-only"_ Flutter
+project. Initial implementations were unsatisfying though, as it was still in
+beta, and lacked some features; [proper handling of mouse scrolling, for
+instance][2].
 
 So I switched to HTML and CSS instead.
 
-I tried to make it visually similar to, if I someday make up my mind to build it, the Flutter web version, but I took some liberty in giving it its flavour.
+Subsequently I began to include blogs to this website, and it quickly occured to
+me that managing HTML elements for ~ 200 lines was not fun. I also planned to
+migrate blogs then written over at [Medium][3], and wrangling the elements for
+those blogs having word counts of >3000 would have been even worse.
+
+So I then migrated to Hugo, with a theme built from scratch.
+
+[1]: https://royarg02.github.io
+[2]: https://github.com/flutter/flutter/issues/55362
+[3]: https://royarg.medium.com
