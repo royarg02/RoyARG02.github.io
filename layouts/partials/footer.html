@@ -38,7 +38,7 @@
       and powered by
       {{- range $index, $entry := . }}
         <a href="{{ $entry.url }}">{{ $entry.name }}</a>
-        {{- if lt $index (sub $creditsLen 1) }}, {{ end -}}
+        {{- if lt $index (sub $creditsLen 1) }},&#32;{{ end -}}
       {{ end -}}
     {{ end -}}.
     {{ with .Site.Params.oss }}

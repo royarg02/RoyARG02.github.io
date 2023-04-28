@@ -20,7 +20,7 @@
   {{- range $index, $tag := sort . -}}
     {{- $url := printf "tags/%s" ($tag | urlize | lower) -}}
     <a id="tag_{{ $tag | lower }}" href="{{ $url | absURL }}">#{{ $tag }}</a>
-    {{- if lt $index (sub $tagsLen 1) }}, {{ end -}}
+    {{- if lt $index (sub $tagsLen 1) }},&#32;{{ end -}}
   {{- end -}}
   </div>
 {{- end }}

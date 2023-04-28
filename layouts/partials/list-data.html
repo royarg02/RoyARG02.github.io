@@ -20,10 +20,10 @@
       {{ if isset $entry "misc" }}
         {{ $entry.name }}
       {{ end }}
-      <a href="{{ $entry.url | absURL }}">{{ if isset $entry "misc" }}Link{{ else }}{{ $entry.name }}{{ end }}</a>
+      <a href="{{ $entry.url | absURL }}">{{ if isset $entry "misc" }}Link{{ else }}{{ $entry.name }}{{ end }}</a>&#32;
       {{ with $entry.misc }}
         {{ range $key, $value := . }}
-          <a href="{{ $value }}">{{ replace $key "-" " " | humanize }}</a>
+          <a href="{{ $value }}">{{ replace $key "-" " " | humanize }}</a>&#32;
         {{ end }}
       {{ end }}
     </li>
