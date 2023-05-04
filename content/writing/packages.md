@@ -9,6 +9,8 @@ tags:
   - development
   - linux
   - packages
+aliases:
+  - /blogs/packages
 ---
 {{< figure
   src="https://xkcd.com/comics/automation.png"

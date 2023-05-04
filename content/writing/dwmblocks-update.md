@@ -8,6 +8,8 @@ license:
 tags:
   - packages
   - updates
+aliases:
+  - /blogs/dwmblocks-update
 ---
 [Due to a versioning mishap][1], an update to **[dwmblocks-royarg-git][2]** may
 display the following message from `pacman`:

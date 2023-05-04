@@ -8,6 +8,8 @@ license:
 tags:
   - linux
   - packages
+aliases:
+  - /blogs/build-from-chroot
 ---
 I've recently begun [packaging my custom builds of known software][1] I use on
 my Linux setup.
