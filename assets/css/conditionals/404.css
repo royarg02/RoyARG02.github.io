@@ -1,0 +1,27 @@
+.bsod {
+  border-radius: 0rem;
+  background-color: #1173AA !important;
+  color: #FFFFFF !important;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 3rem;
+}
+
+.bsod > h2 {
+  font-size: 9.375rem;
+  font-weight: 400;
+  margin: 0rem 0rem 0.5rem 0rem;
+}
+
+.bsod > p {
+  padding: 0rem 0rem 0rem 1rem;
+}
+
+.bsod > p:first-of-type {
+  margin: 0.5rem 0rem 2rem 0rem;
+  font-size: 1.5rem;
+}
+
+.bsod > p:last-of-type {
+  margin: 0rem;
+  font-size: 1rem;
+}

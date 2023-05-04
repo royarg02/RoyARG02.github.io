@@ -27,11 +27,15 @@
         <link rel="{{ $entry.name | default "icon" }}"{{ with $entry.size }} sizes="{{ . }}"{{ end }} href="{{ $entry.file | absURL }}">
       {{ end }}
     {{- end }}
-    {{ $CSS := resources.Match "css/*.css" | resources.Concat "style.css" | resources.Minify | resources.Fingerprint }}
+    {{- $CSS := resources.Match "css/*.css" | resources.Concat "style.css" | resources.Minify | resources.Fingerprint -}}
     <link rel="stylesheet" type="text/css" href="{{ $CSS.RelPermalink }}">
     {{ if .IsPage }}
-      {{ $pageCSS := resources.GetMatch "css/conditionals/page.css" | resources.Minify | resources.Fingerprint }}
+      {{- $pageCSS := resources.GetMatch "css/conditionals/page.css" | resources.Minify | resources.Fingerprint -}}
       <link rel="stylesheet" type="text/css" href="{{ $pageCSS.RelPermalink }}">
+    {{ end }}
+    {{ if (eq .Page.Kind "404") }}
+      {{- $404CSS := resources.GetMatch "css/conditionals/404.css" | resources.Minify | resources.Fingerprint -}}
+      <link rel="stylesheet" type="text/css" href="{{ $404CSS.RelPermalink }}">
     {{ end }}
     {{ with .Params.author -}}
       <meta name="author" content="{{ . }}">
@@ -48,7 +52,7 @@
     {{ block "header" . }}
       {{ partial "header.html" . }}
     {{ end }}
-    <main>
+    <main {{ if (eq .Page.Kind "404") }}class="bsod"{{ end }}>
       {{ block "main" . }}
         {{ .Content }}
       {{ end }}

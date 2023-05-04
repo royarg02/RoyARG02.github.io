@@ -17,7 +17,7 @@
 <header>
   <h1 id="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
   {{ if not .IsHome }}
-    <h1 id="content-title">{{ .LinkTitle | markdownify }}</h1>
+    {{ if not (eq .Page.Kind "404") }}<h1 id="content-title">{{ .LinkTitle | markdownify }}</h1>{{ end }}
     {{ if .IsPage }}
       <p id="publishdate">{{ .Date | dateFormat ":date_medium" }}</p>
       {{ partial "list-content-tags" . }}
