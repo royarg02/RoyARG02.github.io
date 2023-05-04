@@ -25,7 +25,7 @@
   <ul>
     <h2>{{ len .Pages }} posts</h2>
     {{ range .Pages.ByPublishDate.Reverse }}
-      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a></li>
+      <li><a href="{{ partial "page-permalink.html" . }}">{{ .LinkTitle | markdownify }}</a></li>
     {{ end }}
   </ul>
 {{ end }}

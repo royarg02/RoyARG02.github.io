@@ -2,10 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {{- range .Pages -}}
     {{- $isPage := or (.IsPage) (.IsHome) -}}
-    {{- $isExcluded := .Params.excludeCrawler -}}
+    {{/* Sitemaps are not recommended to specify external domains */}}
+    {{- $isExcluded := (or .Params.excludeCrawler .Params.externalAlias) -}}
     {{- if and ($isPage) (not $isExcluded) }}
       <url>
-        <loc>{{ .Permalink }}</loc>
+        <loc>{{ partial "page-permalink.html" . }}</loc>
         <lastmod>{{ .Date.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
       </url>
     {{- end -}}

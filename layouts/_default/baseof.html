@@ -39,25 +39,14 @@
     {{ with .Params.license -}}
       <link rel="license" href="{{ .url }}">
     {{- end }}
-    {{ with .Params.redirect }}
-      <meta http-equiv="refresh" content="0; url={{ . }}" />
-    {{ end }}
     <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
   </head>
   <body>
     {{ block "sidebar" . }}
-      {{ with .Params.redirect }}
-        <!-- this comment is made to get an "empty" block -->
-      {{ else }}
-        {{ partial "sidebar.html" . }}
-      {{ end }}
+      {{ partial "sidebar.html" . }}
     {{ end }}
     {{ block "header" . }}
-      {{ with .Params.redirect }}
-        <!-- this comment is made to get an "empty" block -->
-      {{ else }}
-        {{ partial "header.html" . }}
-      {{ end }}
+      {{ partial "header.html" . }}
     {{ end }}
     <main>
       {{ block "main" . }}
@@ -65,11 +54,7 @@
       {{ end }}
     </main>
     {{ block "footer" . }}
-      {{ with .Params.redirect }}
-        <!-- this comment is made to get an "empty" block -->
-      {{ else }}
-        {{ partial "footer.html" . }}
-      {{ end }}
+      {{ partial "footer.html" . }}
     {{ end }}
   </body>
 </html>

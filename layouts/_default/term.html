@@ -19,9 +19,7 @@
   <h2>{{ partial "pluralize.html" (dict "count" $count "term" "post")}} tagged</h2>
   <ul>
     {{ range .Pages }}
-        <li>
-            <a href="{{ .Permalink }}">{{ .LinkTitle | markdownify }}</a>
-        </li>
+      <li><a href="{{ partial "page-permalink.html" . }}">{{ .LinkTitle | markdownify }}</a></li>
     {{ end }}
   </ul>
 {{ end }}

@@ -14,12 +14,4 @@
       You should have received a copy of the GNU Affero General Public License
       along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */}}
-<ul>
-  {{ $items := (where .context.Site.RegularPages.ByPublishDate.Reverse "Section" "=" .section ) }}
-  {{ range first 10 $items }}
-    <li><a href="{{ partial "page-permalink.html" . }}">{{ .LinkTitle | markdownify }}</a></li>
-  {{ end }}
-  {{ if gt (len $items) 10 }}
-    <li><a href="{{ absURL .section }}">See more {{ replace .section "-" " " }}s...</a></li>
-  {{ end }}
-</ul>
+{{- with .Params.externalAlias }}{{ . }}{{ else }}{{ $.Permalink }}{{ end -}}
