@@ -10,6 +10,7 @@ tags:
   - updates
 aliases:
   - /blogs/actual-blogging
+  - /blogs/actual-blogging.html
 ---
 I had been meaning to make this website something _more than_ just displaying my
 portfolio, and as of last year, planning to add blogs to this site itself.

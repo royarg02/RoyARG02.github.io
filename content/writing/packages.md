@@ -11,6 +11,7 @@ tags:
   - packages
 aliases:
   - /blogs/packages
+  - /blogs/packages.html
 ---
 {{< figure
   src="https://xkcd.com/comics/automation.png"

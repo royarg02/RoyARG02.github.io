@@ -10,6 +10,7 @@ tags:
   - packages
 aliases:
   - /blogs/build-from-chroot
+  - /blogs/build-from-chroot.html
 ---
 I've recently begun [packaging my custom builds of known software][1] I use on
 my Linux setup.

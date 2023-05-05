@@ -10,6 +10,7 @@ tags:
   - updates
 aliases:
   - /blogs/dwmblocks-update
+  - /blogs/dwmblocks-update.html
 ---
 [Due to a versioning mishap][1], an update to **[dwmblocks-royarg-git][2]** may
 display the following message from `pacman`:
