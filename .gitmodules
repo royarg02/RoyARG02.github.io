@@ -1,0 +1,3 @@
+[submodule "themes/rugo"]
+	path = themes/rugo
+	url = git@github.com:royarg02/rugo.git

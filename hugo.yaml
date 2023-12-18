@@ -1,24 +1,10 @@
-baseURL: http://royarg02.github.io/
+baseURL: 'https://royarg02.github.io/'
 languageCode: 'en-us'
-title: 'Anurag Roy'
+title: 'royarg02'
 copyright: 'Copyright &copy; Anurag Roy 2020-2023.'
+theme: rugo
 taxonomies:
   tag: tags
-
-menu:
-  main:
-   - identifier: work
-     name: 'Work'
-     url: /#work
-     weight: 1
-   - identifier: writing
-     name: 'Writing'
-     url: /#writing
-     weight: 2
-   - identifier: public-speaking
-     name: 'Public speaking'
-     url: /#public-speaking
-     weight: 3
 
 pluralizeListTitles: false
 
@@ -32,8 +18,6 @@ services:
     disableInlineCSS: true
 
 enableRobotsTXT: true
-disableKinds:
-  - RSS
 
 params:
   includeAdditionalFavicons:
@@ -48,9 +32,12 @@ params:
     - name: 'apple-touch-icon'
       file: apple-touch-icon.png
 
-  tagsInSection: true
+  termsInSection: true
+  maxSectionListItems: 10
 
-  webServerCredits:
+  websiteCredits:
+    - name: 'Hugo'
+      url: 'https://gohugo.io/'
     - name: 'GitHub Pages'
       url: 'https://pages.github.com/'
 
@@ -62,4 +49,4 @@ params:
     source: 'https://github.com/royarg02/RoyARG02.github.io'
     license:
       name: 'GNU AGPL 3.0'
-      url: https://www.gnu.org/licenses/agpl-3.0.html
+      url: 'https://www.gnu.org/licenses/agpl-3.0.html'

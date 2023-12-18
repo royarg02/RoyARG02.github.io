@@ -4,8 +4,8 @@
 - name: 'GitHub'
   url: https://github.com/royarg02
 
-- name: 'Twitter'
-  url: https://twitter.com/_royarg
+- name: '𝕏'
+  url: https://x.com/_royarg
 
 - name: 'StackOverflow'
   url: https://stackoverflow.com/users/12045444/royarg
@@ -15,3 +15,6 @@
 
 - name: 'Email'
   url: mailto:anuragr9847@gmail.com
+
+- name: 'RSS'
+  url: ./index.xml

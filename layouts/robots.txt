@@ -1,8 +1,0 @@
-User-agent: *
-{{- range .Pages -}}
-  {{ if .Params.excludeCrawler }}
-    Disallow: {{ .RelPermalink }}
-  {{- end -}}
-{{ end }}
-
-Sitemap: {{ .Site.SitemapAbsURL }}
