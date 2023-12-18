@@ -18,7 +18,7 @@ aliases:
   alt="Automation comic by xkcd"
   caption="[Automation](https://xkcd.com/1319) by [xkcd](https://xkcd.com) / [CC BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/legalcode)"
   width="100%"
-  class="figure-float-right"
+  class="figure-float-right figure-smaller"
 >}}
 
 I use various suckless(or suckless like) software, including the [window
@@ -85,6 +85,10 @@ package,
 
 Currently, the following packages are available in the repository:
 
+>> Since this blog was published some of the packages have been deprecated and
+others were moved to [this monorepo][16]. The links below are kept as-is for
+archival purposes.
+
 - **[dmenu-royarg-git][8]**
 - **[dwm-royarg-git][9]**
 - **[dwmblocks-royarg-git][10]**
@@ -115,3 +119,4 @@ Until next time.
 [13]: {{< get-profile "GitHub" >}}/st-royarg-git
 [14]: {{< get-profile "GitHub" >}}/royarg-repo
 [15]: {{< get-profile "GitHub" >}}/royarg-repo/blob/master/README.md
+[16]: {{< get-profile "GitHub" >}}/royarg-repo-pkgbuilds

@@ -65,7 +65,7 @@ So we can figure out the compile-time dependencies, but what about the runtime
 dependencies? We run:
 
 ```sh
-makechrootpkg -c <strong>-n</strong> -r $CHROOT
+makechrootpkg -c -n -r $CHROOT
 ```
 
 The **`-n`** flag additionally runs [`namcap`][7], which checks for packaging

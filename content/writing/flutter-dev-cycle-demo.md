@@ -7,6 +7,7 @@ license:
   name: 'CC BY‑ND 4.0'
   url: https://creativecommons.org/licenses/by-nd/4.0/legalcode
 tags:
+  - beginner
   - dart
   - development
   - flutter
