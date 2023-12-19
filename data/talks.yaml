@@ -1,14 +1,14 @@
 - name: 'Introduction to Flutter @ DSC NSEC: Full Stack Projects'
-  url: https://www.youtube.com/watch?v=A6tJDejtuOo
-  misc:
+  links:
+    watch: https://www.youtube.com/watch?v=A6tJDejtuOo
     slides: https://docs.google.com/presentation/d/e/2PACX-1vSKjMXwBDxtssY8aBFesgE32NQpubi5jP6yLK0VYCp-fffpkp4AGUtxSor4LiGeKgDIXZHlmILlPlgn/pub?start=false&loop=false&delayms=60000
 
 - name: 'Flutter: Working with Widgets @ DSC NSEC: Full Stack Projects'
-  url: https://www.youtube.com/watch?v=98ySGG1gKd8
-  misc:
+  links:
+    watch: https://www.youtube.com/watch?v=98ySGG1gKd8
     slides: https://docs.google.com/presentation/d/e/2PACX-1vQdZerfhiRm6Eoghd0CGM2QfV1uDUSae1UTwhMNPKkqIjOWjYm0-LQ0Au7Lcdyt4mqwVxhuDqUzqN9G/pub?start=false&loop=false&delayms=60000
 
 - name: 'Flutter: Using Packages and Assets @ DSC NSEC: Full Stack Projects'
-  url: https://www.youtube.com/watch?v=398MTLE_6Xs
-  misc:
+  links:
+    watch: https://www.youtube.com/watch?v=398MTLE_6Xs
     slides: https://docs.google.com/presentation/d/e/2PACX-1vSZay63qGiKlwOgx_DRbEN6Y4DQ_O-xaCe39LVmU1pR6bfmg3wObsd_uGu-W9nbPEYXb3lUrJuIXnKa/pub?start=false&loop=false&delayms=60000
