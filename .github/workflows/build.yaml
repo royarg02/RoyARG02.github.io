@@ -3,6 +3,13 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'content/**'
+      - 'data/**'
+      - 'layouts/**'
+      - 'static/**'
+      - 'themes/**'
+      - 'hugo.yaml'
   workflow_dispatch:
 
 permissions:
