@@ -19,6 +19,11 @@ services:
 
 enableRobotsTXT: true
 
+markup:
+  highlight:
+    anchorLineNos: true
+    tabWidth: 2
+
 params:
   includeAdditionalFavicons:
     - file: android-chrome-512x512.png
