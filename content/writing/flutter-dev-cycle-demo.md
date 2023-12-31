@@ -378,6 +378,7 @@ We have the following images to display the dice faces:
   alt="The dice images to be used in the app"
   caption="The dice images to be used in the app"
   width="100%"
+  loading="lazy"
 >}}
 
 To add them the app, let’s create a folder to put them in:
@@ -388,6 +389,7 @@ To add them the app, let’s create a folder to put them in:
   caption="The assets are put in a newly created \"assets\" folder in the root of the project"
   width="100%"
   class="figure-smaller"
+  loading="lazy"
 >}}
 
 To use these images in the app, they need to be “imported”, but not like any
@@ -404,6 +406,7 @@ By default, there are commented statements as guides to use the assets:
   src="/images/flutter-dev-cycle-demo/asset-comments.webp"
   alt="The commented lines guiding to specify asset dependencies"
   width="100%"
+  loading="lazy"
 >}}
 
 Likewise, with proper indentation, add to `pubspec.yaml`:

@@ -19,11 +19,12 @@ aliases:
   caption="[Automation](https://xkcd.com/1319) by [xkcd](https://xkcd.com) / [CC BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/legalcode)"
   width="100%"
   class="figure-float-right figure-smaller"
+  loading="lazy"
 >}}
 
-I use various suckless(or suckless like) software, including the [window
-manager][1], the ["run" launcher][2], the [status bar][3] and the [terminal][4]
-on my Linux machine.
+I use various suckless(or suckless like) software, including the [window manager][1],
+the ["run" launcher][2], the [status bar][3] and the [terminal][4] on my Linux
+machine.
 
 One of the main features of these "suckless-like" software is that they have to
 be built from the source since that is the only way for configuration. The

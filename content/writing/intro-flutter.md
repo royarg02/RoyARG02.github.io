@@ -55,6 +55,7 @@ framework. A viable alternative to offline documentation.
   src="/images/intro-flutter/low-effort-hot-reload.webp"
   alt="Demonstrating hot-reload though a meme"
   width="100%"
+  loading="lazy"
 >}}
 
 So what is the uniqueness of hot reload that makes it worthy of having a
@@ -85,6 +86,7 @@ reload process follows:
   caption="A crude representation of the hot reload process in Flutter"
   width="100%"
   class="figure-smaller"
+  loading="lazy"
 >}}
 
 - Upon making changes and hot reloading, the Dart VM reloads (or injects) the
@@ -98,8 +100,7 @@ the changes displayed at the output.
 This functionality is not limited to Flutter itself, as the following tweet shows:
 {{< tweet user="passy" id="1223583561049047040">}}
 
-Enough talk, head on over to this [article demonstrating the dev cycle in
-practice][12].
+Enough talk, head on over to this [article demonstrating the dev cycle in practice][12].
 
 [1]: https://royarg.medium.com/the-development-cycle-of-flutter-a-demonstration-a108f8064114
 [2]: https://flutter.dev
@@ -112,4 +113,4 @@ practice][12].
 [9]: https://github.com/bdlukaa/fluent_ui
 [10]: https://github.com/flutter/flutter
 [11]: https://github.com/flutter/flutter/wiki/Style-guide-for-Flutter-repo#documentation-dartdocs-javadocs-etc
-[12]: {{< relref "flutter-dev-cycle-demo.md" >}}
+[12]: {{< ref "flutter-dev-cycle-demo.md" >}}

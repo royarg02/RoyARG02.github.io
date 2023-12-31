@@ -1,4 +1,4 @@
-# RoyARG02.github.io
+# royarg02.github.io
 
 [Portfolio Website][1]
 
@@ -16,8 +16,9 @@ me that managing HTML elements for ~ 200 lines was not fun. I also planned to
 migrate blogs then written over at [Medium][3], and wrangling the elements for
 those blogs having word counts of >3000 would have been even worse.
 
-So I then migrated to Hugo, with a theme built from scratch.
+So I then migrated to Hugo, with a [theme built from scratch][4].
 
 [1]: https://royarg02.github.io
 [2]: https://github.com/flutter/flutter/issues/55362
 [3]: https://royarg.medium.com
+[4]: https://github.com/royarg02/rugo

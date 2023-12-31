@@ -185,7 +185,7 @@ class Bloc {
   Bloc({required Model model}) {
     _model = model;
     _stateStreamController.sink.add(_model.data);
-    _eventStreamController.stream.listen(listener);
+    _eventStreamController.stream.listen(performLogic);
   }
 
   void dispose() {
@@ -201,7 +201,7 @@ class Bloc {
  |                      '-------------------------'                     |
  |          UI          |                         | onEventOne(_model)  |
  |                      .-------------------------.                     |
- |           model.data |<- _stateStreamController|                     |
+ |          _model.data |<- _stateStreamController|                     |
  '----------------------'-------------------------'---------------------'
 ```
 
@@ -214,8 +214,7 @@ But how do we access the `Bloc` class in the first place?
 ### "Providing" the BLoC
 
 Making data available for widgets that need it can be done by defining a
-`BlocProvider` class which extends [InheritedWidget][10], which makes it
-available to any widget down in the widget tree if need be.
+`BlocProvider` class which extends [InheritedWidget][10].
 
 ```dart {lineNos=inline}
 class BlocProvider extends InheritedWidget {
@@ -235,7 +234,7 @@ class BlocProvider extends InheritedWidget {
 ```
 
 When we add this widget at the top of the widget tree, every widget under it
-gets access:
+gets access to the BLoC:
 
 ```dart {lineNos=inline,hl_lines="8-11"}
 class MyApp extends StatelessWidget {
@@ -313,7 +312,7 @@ class _BlocConsumerState extends State<BlocConsumer> {
 
 We mainly use two lifecycle methods:
 
-- [`didChangeDependencies`][12]: Here we access the bloc from `BlocProvider`.
+- [`didChangeDependencies`][12]: Here we access the BLoC from `BlocProvider`.
 Defining here would make the widget itself rebuild when `BlocProvider` is
 changed.
 - [`dispose`][13]: Here we call the `Bloc.dispose` method to dispose the defined
