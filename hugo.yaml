@@ -1,7 +1,7 @@
 baseURL: 'https://royarg02.github.io/'
 languageCode: 'en-us'
 title: 'royarg02'
-copyright: 'Copyright &copy; Anurag Roy 2020-2023.'
+copyright: 'Copyright &copy; Anurag Roy 2020-2024.'
 theme: rugo
 taxonomies:
   tag: tags
