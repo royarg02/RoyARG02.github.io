@@ -38,8 +38,8 @@ params:
       file: apple-touch-icon.png
 
   termsInSection: true
-  datesInSectionList: true
-  maxSectionTruncatedListItems: 10
+  datesInPageList: true
+  maxTruncatedPageListItems: 10
 
   websiteCredits:
     - name: 'Hugo'
