@@ -1,5 +1,5 @@
 - name: 'Resume'
-  url: ./resume.pdf
+  url: resume.pdf
 
 - name: 'GitHub'
   url: https://github.com/royarg02
@@ -17,4 +17,4 @@
   url: mailto:anuragr9847@gmail.com
 
 - name: 'RSS'
-  url: ./index.xml
+  url: index.xml

@@ -52,8 +52,8 @@ another framework and working to make my Linux exprerience [lightweight][3] and
 [7]: {{< get-profile "GitHub" >}}/soil_moisture_app
 [8]: https://arig23498.github.io/
 [9]: https://ayushthakur.gitbook.io/
-[10]: https://snehangshu.now.sh/
-[11]: https://github.com/forkbomb-666/drip_irrigation_server
+[10]: https://snehangshu.dev/
+[11]: https://github.com/f0rkb0mbZ/drip_irrigation_server
 [12]: https://twitter.com/AnkanChattapad1
 [13]: https://github.com/Chandril98
 [14]: https://twitter.com/purkaitsuman1
