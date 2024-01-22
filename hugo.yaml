@@ -3,8 +3,6 @@ languageCode: 'en-us'
 title: 'royarg02'
 copyright: 'Copyright &copy; Anurag Roy 2020-2024.'
 theme: rugo
-taxonomies:
-  tag: tags
 
 pluralizeListTitles: false
 

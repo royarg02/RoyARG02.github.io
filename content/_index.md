@@ -37,7 +37,7 @@ another framework and working to make my Linux exprerience [lightweight][3] and
 
 ## Writing
 
-{{< list-section-sc "writing" >}}
+{{< list-pages-sc "writing" >}}
 
 ## Public speaking
 
