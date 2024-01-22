@@ -7,6 +7,7 @@ license:
   name: 'CC BY‑ND 4.0'
   url: https://creativecommons.org/licenses/by-nd/4.0/legalcode
 tags:
+  - hugo
   - updates
 ---
 I took the better part of this year to tinker around with this website. Before
@@ -33,7 +34,7 @@ website along with the color scheme into a [separate theme][5], in its own repo.
 That way I can use the same visual look across other sites I might port to Hugo.
 
 [1]: https://github.com/royarg02/RoyARG02.github.io/blob/4294b27f90c5a46c26ae9e87246101df6cac6044/blogs/packages.html
-[2]: {{< ref flutter-dev-cycle-demo >}}
-[3]: {{< ref actual-blogging >}}
+[2]: {{< ref "flutter-dev-cycle-demo.md" >}}
+[3]: {{< ref "actual-blogging.md" >}}
 [4]: https://gohugo.io
 [5]: {{< get-profile "GitHub" >}}/rugo/
