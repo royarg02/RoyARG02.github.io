@@ -5,11 +5,12 @@ date: 2024-01-22T21:38:03+05:30
 license:
   name: 'CC BY‑ND 4.0'
   url: https://creativecommons.org/licenses/by-nd/4.0/legalcode
-categories:
-  - royarg-repo
 tags:
   - hugo
+  - royarg-repo
   - updates
+aliases:
+  - /writing/package-repo-website-update
 ---
 
 After [migrating my portfolio website][1] to Hugo, the logical next candidate
@@ -22,7 +23,7 @@ of the packages it offers, typical of an [_actual_ package repository][3]:
 
 {{< figure
   src="/images/package-repo-website-update/package-repo.jpg"
-  alt="A package repostory typically lists the package files similar to a file server"
+  alt="A package repository typically lists the package files similar to a file server"
   caption="This is what shows up when you visit https://arch.kyberorg.fi/core/os/x86_64/ on a web browser"
   width="100%"
   loading="lazy"

@@ -8,7 +8,7 @@ license:
 tags:
   - development
   - linux
-  - packages
+  - package-maintaining
 aliases:
   - /blogs/packages
   - /blogs/packages.html

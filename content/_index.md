@@ -35,9 +35,12 @@ another framework and working to make my Linux exprerience [lightweight][3] and
   software, which I use daily on my Linux machine. Building and deploying of
   packages are done using [Github Actions][21].
 
-## Writing
+## Recent posts
 
-{{< list-pages-sc "writing" >}}
+{{< list-pages-sc "" >}}
+
+- See more [articles and writings][22].
+- See more [updates and announcements][23].
 
 ## Public speaking
 
@@ -64,3 +67,5 @@ another framework and working to make my Linux exprerience [lightweight][3] and
 [19]: {{< get-profile "GitHub" >}}/royarg-repo/
 [20]: https://archlinux.org
 [21]: https://github.com/features/actions
+[22]: {{< ref "/writing" >}}
+[23]: {{< ref "/updates" >}}

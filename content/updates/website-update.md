@@ -9,6 +9,8 @@ license:
 tags:
   - hugo
   - updates
+aliases:
+  - /writing/website-update
 ---
 I took the better part of this year to tinker around with this website. Before
 that, this website used to be made out of manually written `HTML` tags, which

@@ -7,7 +7,7 @@ license:
   url: https://creativecommons.org/licenses/by-nd/4.0/legalcode
 tags:
   - linux
-  - packages
+  - package-maintaining
 aliases:
   - /blogs/build-from-chroot
   - /blogs/build-from-chroot.html

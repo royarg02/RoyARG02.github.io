@@ -5,14 +5,14 @@ author: 'Anurag Roy'
 license:
   name: 'CC BY‑ND 4.0'
   url: https://creativecommons.org/licenses/by-nd/4.0/legalcode
-categories:
-  - royarg-repo
 tags:
-  - packages
+  - package-maintaining
+  - royarg-repo
   - updates
 aliases:
   - /blogs/dwmblocks-update
   - /blogs/dwmblocks-update.html
+  - /writing/dwmblocks-update
 ---
 [Due to a versioning mishap][1], an update to **[dwmblocks-royarg-git][2]** may
 display the following message from `pacman`:
