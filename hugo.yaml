@@ -6,6 +6,7 @@ theme: rugo
 taxonomies:
   tag: tags
 
+capitalizeListTitles: false
 pluralizeListTitles: false
 
 privacy:
