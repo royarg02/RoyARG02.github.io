@@ -24,8 +24,8 @@ required to build a dice roller app.
 Our app, after completion, would somewhat look like the following:
 
 {{< video
-  src="/videos/flutter-dev-cycle-demo/app-complete.webm"
-  type="video/webm"
+  src="app-complete.mp4"
+  type="video/mp4"
   width="100%"
   class="figure-smaller"
 >}}
@@ -241,8 +241,8 @@ class _BodyState extends State<Body>{
 Let us try running the app now.
 
 {{< video
-  src="/videos/flutter-dev-cycle-demo/step-3.webm"
-  type="video/webm"
+  src="step-3.mp4"
+  type="video/mp4"
   width="100%"
 >}}
 
@@ -363,8 +363,8 @@ other object. But they are not constants, so the `Column` can't be declared as
 `const` anymore, but each of the labels of the buttons can.
 
 {{< video
-  src="/videos/flutter-dev-cycle-demo/step-5.webm"
-  type="video/webm"
+  src="step-5.mp4"
+  type="video/mp4"
   caption="To hot reload, hit `r` in the current terminal session of `flutter run`"
   width="100%"
 >}}
@@ -374,7 +374,7 @@ other object. But they are not constants, so the `Column` can't be declared as
 We have the following images to display the dice faces:
 
 {{< figure
-  src="/images/flutter-dev-cycle-demo/dice-images.webp"
+  src="dice-images.jpg"
   alt="The dice images to be used in the app"
   caption="The dice images to be used in the app"
   width="100%"
@@ -384,7 +384,7 @@ We have the following images to display the dice faces:
 To add them the app, let’s create a folder to put them in:
 
 {{< figure
-  src="/images/flutter-dev-cycle-demo/assets-location.webp"
+  src="assets-location.jpg"
   alt="The assets are put in a newly created \"assets\" folder in the root of the project"
   caption="The assets are put in a newly created \"assets\" folder in the root of the project"
   width="100%"
@@ -403,7 +403,7 @@ app. This includes any offline assets.
 By default, there are commented statements as guides to use the assets:
 
 {{< figure
-  src="/images/flutter-dev-cycle-demo/asset-comments.webp"
+  src="asset-comments.jpg"
   alt="The commented lines guiding to specify asset dependencies"
   width="100%"
   loading="lazy"
@@ -463,8 +463,8 @@ class _BodyState extends State<Body>{
 ```
 
 {{< video
-  src="/videos/flutter-dev-cycle-demo/step-7.webm"
-  type="video/webm"
+  src="step-7.mp4"
+  type="video/mp4"
   width="100%"
 >}}
 
@@ -497,8 +497,8 @@ Image.asset(
 ```
 
 {{< video
-  src="/videos/flutter-dev-cycle-demo/step-8.webm"
-  type="video/webm"
+  src="step-8.mp4"
+  type="video/mp4"
   width="100%"
 >}}
 
@@ -531,8 +531,8 @@ of time the `SnackBar` should stay visible on the screen as the `duration`
 parameter.
 
 {{< video
-  src="/videos/flutter-dev-cycle-demo/step-9.webm"
-  type="video/webm"
+  src="step-9.mp4"
+  type="video/mp4"
   width="100%"
 >}}
 
@@ -598,8 +598,8 @@ return MaterialApp(
 ```
 
 {{< video
-  src="/videos/flutter-dev-cycle-demo/step-10.webm"
-  type="video/webm"
+  src="step-10.mp4"
+  type="video/mp4"
   width="100%"
 >}}
 

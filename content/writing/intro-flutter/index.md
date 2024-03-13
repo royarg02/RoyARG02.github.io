@@ -52,7 +52,7 @@ framework. A viable alternative to offline documentation.
 ## The elephant in the room: Hot Reload
 
 {{< figure
-  src="/images/intro-flutter/low-effort-hot-reload.webp"
+  src="low-effort-hot-reload.jpg"
   alt="Demonstrating hot-reload though a meme"
   width="100%"
   loading="lazy"
@@ -65,8 +65,8 @@ makes changes take effect **moments after you press a button** and continue. By
 default, it also preserves the current state of the app.
 
 {{< video
-  src="/videos/intro-flutter/hot-reload.webm"
-  type="video/webm"
+  src="hot-reload.mp4"
+  type="video/mp4"
   width="100%"
   caption="Hot reloading makes the changes take effect immediately without losing state"
 >}}
@@ -81,7 +81,7 @@ which supports incremental compilation. An abstract explanation of the hot
 reload process follows:
 
 {{< figure
-  src="/images/intro-flutter/hot-reload-process.webp"
+  src="hot-reload-process.jpg"
   alt="When the user requests a hot-reload, the VM reloads the changed files and forces a widget rebuild"
   caption="A crude representation of the hot reload process in Flutter"
   width="100%"

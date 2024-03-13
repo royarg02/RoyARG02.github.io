@@ -22,7 +22,7 @@ The migration had another motivation as well. I wanted the site to have a list
 of the packages it offers, typical of an [_actual_ package repository][3]:
 
 {{< figure
-  src="/images/package-repo-website-update/package-repo.jpg"
+  src="package-repo.jpg"
   alt="A package repository typically lists the package files similar to a file server"
   caption="This is what shows up when you visit https://arch.kyberorg.fi/core/os/x86_64/ on a web browser"
   width="100%"
