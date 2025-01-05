@@ -1,6 +1,7 @@
 ---
 title: 'I took compiling from source to the next level'
 date: 2022-05-27
+lastmod: 2023-12-18
 author: 'Anurag Roy'
 license:
   name: 'CC BY‑ND 4.0'

@@ -1,6 +1,7 @@
 ---
 title: 'The development cycle of Flutter: An introduction'
 date: 2020-04-08T00:00:00+05:30
+lastmod: 2023-04-28
 author: 'Anurag Roy'
 license:
   name: 'CC BY‑ND 4.0'

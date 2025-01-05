@@ -1,6 +1,7 @@
 ---
 title: Flutter BLoC, from the perspective of a beginner
 date: 2020-05-11T00:00:40+05:30
+lastmod: 2023-12-31
 author: 'Anurag Roy'
 license:
   name: 'CC BY‑ND 4.0'
