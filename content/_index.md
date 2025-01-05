@@ -4,15 +4,10 @@ description: "Hi, I'm Anurag. I'm an electronics graduate with a immense interes
 layout: single
 ---
 
-Hi, I'm Anurag. I'm an electronics graduate with a immense interest in building
-open-source software.
+Hi, I'm Anurag, and this is my webpage. I'm an electronics graduate with a
+immense interest in building open-source software. Thanks for stopping by!
 
-I'm currently submitting the occasional [patch][1] to the Flutter SDK,
-[tweaking][2] my dotfiles, planning to rewrite this website next year with
-another framework and working to make my Linux exprerience [lightweight][3] and
-[suck][4] a bit [less][5].
-
-## Work
+## Notable Works
 
 - [Contributions to `flutter/flutter`][6] on GitHub.
 - [Soif][7] with [Aritra Roy Gosthipaty][8], [Ayush Thakur][9] and [Snehangshu Bhattacharya][10]
@@ -46,11 +41,6 @@ another framework and working to make my Linux exprerience [lightweight][3] and
 
 {{< list-data-sc "talks" >}}
 
-[1]: https://github.com/flutter/flutter/pulls?q=is%3Apr+author%3ARoyARG02
-[2]: {{< get-profile "GitHub" >}}/user_files
-[3]: {{< get-profile "GitHub" >}}/dwm
-[4]: {{< get-profile "GitHub" >}}/st
-[5]: {{< get-profile "GitHub" >}}/dmenu
 [6]: https://github.com/flutter/flutter/commits?author=RoyARG02
 [7]: {{< get-profile "GitHub" >}}/soil_moisture_app
 [8]: https://arig23498.github.io/
