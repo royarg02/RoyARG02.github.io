@@ -48,7 +48,7 @@ formats/languages for business logic and UI.
 [strict guidelines][11], enabling one to dig deeper into the actual guts of the
 framework. A viable alternative to offline documentation.
 
-{{< tweet user="remi_rousselet" id="1247692103808925697" >}}
+{{< x user="remi_rousselet" id="1247692103808925697" >}}
 
 ## The elephant in the room: Hot Reload
 
@@ -99,7 +99,7 @@ the app(this may consist of a single element or multiple elements).
 the changes displayed at the output.
 
 This functionality is not limited to Flutter itself, as the following tweet shows:
-{{< tweet user="passy" id="1223583561049047040">}}
+{{< x user="passy" id="1223583561049047040">}}
 
 Enough talk, head on over to this [article demonstrating the dev cycle in practice][12].
 

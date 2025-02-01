@@ -7,7 +7,7 @@ layout: single
 Hi, I'm Anurag, and this is my webpage. I'm an electronics graduate with a
 immense interest in building open-source software. Thanks for stopping by!
 
-## Notable Works
+## Notable works
 
 - [Contributions to `flutter/flutter`][6] on GitHub.
 - [Soif][7] with [Aritra Roy Gosthipaty][8], [Ayush Thakur][9] and [Snehangshu Bhattacharya][10]
