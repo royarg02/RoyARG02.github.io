@@ -7,6 +7,13 @@ layout: single
 Hi, I'm Anurag, and this is my webpage. I'm an electronics graduate with a
 immense interest in building open-source software. Thanks for stopping by!
 
+## Recent posts
+
+{{< list-pages-sc "" >}}
+
+- See more [articles and writings][22].
+- See more [updates and announcements][23].
+
 ## Notable works
 
 - [Contributions to `flutter/flutter`][6] on GitHub.
@@ -29,13 +36,6 @@ immense interest in building open-source software. Thanks for stopping by!
   : An [Arch Linux][20] unofficial repository hosting custom packages of known
   software, which I use daily on my Linux machine. Building and deploying of
   packages are done using [Github Actions][21].
-
-## Recent posts
-
-{{< list-pages-sc "" >}}
-
-- See more [articles and writings][22].
-- See more [updates and announcements][23].
 
 ## Public speaking
 
