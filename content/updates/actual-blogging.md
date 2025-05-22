@@ -20,7 +20,7 @@ That "planning" started with a re-write of all `CSS` classes this website used,
 which depended heavily on the `<section>` element. This work was completed only
 [yesterday][1], as of writing this blog.
 
-It will also relieve me of my [Medium][2] account. I plan to move my
+It will also relieve me of my Medium account. I plan to move my
 (updated)articles here, as I am cutting down on the number of my online accounts
 _(I would lose my "SEO privileges" by doing that, which I couldn't care less)_.
 
@@ -41,6 +41,5 @@ In any case, at least this would be something that increases the commit count of
 [my website][4] :)
 
 [1]: {{< get-profile "GitHub" >}}/RoyARG02.github.io/commit/864d7ea74ecf78601cf938db971983ed67a4e4d8
-[2]: https://royarg.medium.com
 [3]: {{< baseurl >}}
 [4]: {{< get-profile "GitHub" >}}/RoyARG02.github.io/

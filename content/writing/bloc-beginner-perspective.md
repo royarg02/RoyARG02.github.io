@@ -11,7 +11,7 @@ tags:
   - flutter
   - guide
 ---
->> This is an adaptation of an article previously published on [Medium][1].
+>> This is an adaptation of an article previously published on Medium.
 
 When developement of applications is considered, we can think of every action
 the app is supposed to perform as an _asynchronous event_ - whether it is
@@ -326,7 +326,6 @@ but with [less][14] and [even lesser][15] code with the ability to minutely
 track events from the UI event leading to the change of state, from old to the
 new. The best resource to get started to know more about is at the [bloc library's official website][16].
 
-[1]: https://royarg.medium.com/flutter-bloc-from-the-perspective-of-a-beginner-d249d907eeff
 [2]: https://api.dart.dev/stable/dart-async/Future-class.html
 [3]: https://api.dart.dev/stable/dart-async/Stream-class.html
 [4]: https://pub.dev/packages/bloc

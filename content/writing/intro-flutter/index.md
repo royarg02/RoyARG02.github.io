@@ -11,8 +11,7 @@ tags:
   - development
   - flutter
 ---
->> This article was previously published on [Medium][1]. It has been updated
-with changes introduced to Flutter for the last 3 years.
+>> This article is an updated version of one previously published on Medium.
 
 Having experience in programming for about 7 years in various languages limited
 to consoles, I always wanted to explore software development beyond the black
@@ -103,7 +102,6 @@ This functionality is not limited to Flutter itself, as the following tweet show
 
 Enough talk, head on over to this [article demonstrating the dev cycle in practice][12].
 
-[1]: https://royarg.medium.com/the-development-cycle-of-flutter-a-demonstration-a108f8064114
 [2]: https://flutter.dev
 [3]: https://docs.flutter.dev/get-started/flutter-for/declarative
 [4]: https://docs.flutter.dev/development/tools/hot-reload

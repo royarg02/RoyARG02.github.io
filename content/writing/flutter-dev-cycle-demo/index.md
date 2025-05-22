@@ -14,8 +14,7 @@ tags:
   - flutter
   - guide
 ---
->> This article was previously published on [Medium][1]. It has been updated
-with changes introduced to Flutter for the last 3 years.
+>> This article is an updated version of one previously published on Medium.
 
 To demonstrate the development cycle of Flutter, this "guide" shows the steps
 required to build a dice roller app.
@@ -737,7 +736,6 @@ would definitely will.
 
 Best of luck for your future Flutter endeavours!
 
-[1]: https://royarg.medium.com/the-development-cycle-of-flutter-a-demonstration-a108f8064114
 [2]: https://material.io
 [3]: https://developer.apple.com/design/human-interface-guidelines/guidelines/overview
 [4]: https://api.flutter.dev/flutter/widgets/runApp.html
