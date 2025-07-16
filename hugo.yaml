@@ -40,7 +40,7 @@ params:
 
   termsInSection: true
   datesInPageList: true
-  maxTruncatedPageListItems: 10
+  maxTruncatedPageListItems: 20
 
   websiteCredits:
     - name: 'Hugo'
